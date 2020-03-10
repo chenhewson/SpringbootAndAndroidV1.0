@@ -202,4 +202,8 @@
   <select id="findByUsernameAndPassword" parameterType="map" resultMap="BaseResultMap">
     select * from t_user where username=#{username} and password=#{password};
   </select>
+
+  <select id="findByEmail" parameterType="String" resultType="int">
+    select count(*) from t_user where t_Email=#{email}
+  </select>
 </mapper>

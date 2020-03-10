@@ -1,7 +1,11 @@
 package springboot06mybatis.service;
 
 import org.springframework.stereotype.Service;
+import springboot06mybatis.pojo.User;
 import springboot06mybatis.utils.ServerResponse;
+
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * ClassName:    UserService
@@ -12,5 +16,7 @@ import springboot06mybatis.utils.ServerResponse;
  */
 @Service
 public interface UserService {
-    ServerResponse loginLogic(String username, String password);
+    ServerResponse loginLogic(String username, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException;
+
+    ServerResponse registerLogic(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException;
 }

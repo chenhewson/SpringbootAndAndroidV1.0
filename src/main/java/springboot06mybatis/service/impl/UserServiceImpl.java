@@ -1,5 +1,6 @@
 package springboot06mybatis.service.impl;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,12 @@ import springboot06mybatis.common.ResponseCode;
 import springboot06mybatis.dao.UserMapper;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.UserService;
+import springboot06mybatis.utils.MD5Utils;
 import springboot06mybatis.utils.ServerResponse;
+import springboot06mybatis.utils.String2utf_8;
+
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * ClassName:    UserServiceImpl
@@ -22,29 +28,71 @@ import springboot06mybatis.utils.ServerResponse;
 public class UserServiceImpl implements UserService {
 
     protected static final Logger logger = LoggerFactory.getLogger(UserController.class);
-
     @Autowired
     UserMapper userMapper;
     @Override
-    public ServerResponse loginLogic(String username, String password) {
-        if(username==null||username==""){
-            logger.info("username==null||username=="+username);
+    public ServerResponse loginLogic(String username, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        //前台来的密码先统一加密
+        password=String2utf_8.setString2utf_8(password);
+        String MD5Password=MD5Utils.getMD5Code(password);
+        logger.info(MD5Password);
+        if(username==null||username.equals("")){
             return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EMPTY.getCode(),ResponseCode.USERNAME_NOT_EMPTY.getMsg());
         }
-        if(password==null||password==""){
-            logger.info("password==null||password=="+username);
+        if(MD5Password==null||MD5Password.equals("")){
             return ServerResponse.createServerResponseByFail(ResponseCode.PASSWORD_NOT_EMPTY.getCode(),ResponseCode.PASSWORD_NOT_EMPTY.getMsg());
         }
         if(userMapper.findByUserName(username)==0){
-            logger.info("userMapper.findByUserName(username)==null"+username);
             return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
         }
-        User user=userMapper.findByUsernameAndPassword(username,password);
+        User user=userMapper.findByUsernameAndPassword(username,MD5Password);
         if(user==null){
-            logger.info("user==null"+username);
             return ServerResponse.createServerResponseByFail(ResponseCode.PASSWORD_NOT_CORRECT.getCode(),ResponseCode.PASSWORD_NOT_CORRECT.getMsg());
         }
-        logger.info("end+"+username);
         return ServerResponse.createServerResponseBySuccess(user);
+    }
+
+    @Override
+    public ServerResponse registerLogic(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        //用户对象为空
+        if(user==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERINFO_IS_EMPTY.getCode(),ResponseCode.USERINFO_IS_EMPTY.getMsg());
+        }
+
+        String username=user.getUsername();
+        String password=String2utf_8.setString2utf_8(user.getPassword());
+        String email=user.gettEmail();
+
+        //用户名为空？
+        if(username==null||username==""){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EMPTY.getCode(),ResponseCode.USERNAME_NOT_EMPTY.getMsg());
+        }
+        //用户密码为空?
+        if(password==null||password==""){
+            return ServerResponse.createServerResponseByFail(ResponseCode.PASSWORD_NOT_EMPTY.getCode(),ResponseCode.PASSWORD_NOT_EMPTY.getMsg());
+        }
+        //用户邮箱为空？
+        if(email==null||email==""){
+            return ServerResponse.createServerResponseByFail(ResponseCode.EMAIL_NOT_EMPTY.getCode(),ResponseCode.EMAIL_NOT_EMPTY.getMsg());
+        }
+        //用户名存在？
+        if(userMapper.findByUserName(username)>0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_IS_EXIST.getCode(),ResponseCode.USERNAME_IS_EXIST.getMsg());
+        }
+        //用户邮箱存在？
+        if(userMapper.findByEmail(email)>0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.EMAILIS_EXIST.getCode(),ResponseCode.EMAILIS_EXIST.getMsg());
+        }
+
+        //加密
+        user.setPassword(MD5Utils.getMD5Code(user.getPassword()));
+
+        //注册
+        Integer result=userMapper.insert(user);
+        if(result==0){
+            //注册失败
+            return ServerResponse.createServerResponseByFail(ResponseCode.REGISTER_FAILED.getCode(),ResponseCode.REGISTER_FAILED.getMsg());
+        }
+        return ServerResponse.createServerResponseBySuccess();
     }
 }
