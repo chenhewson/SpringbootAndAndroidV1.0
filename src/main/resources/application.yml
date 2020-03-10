@@ -1,0 +1,58 @@
+#注意，该druid配置文件适合以下依赖
+#<dependency>
+#<groupId>com.alibaba</groupId>
+#<artifactId>druid-spring-boot-starter</artifactId>
+#<version>1.1.17</version>
+#</dependency>
+spring:
+  application:
+    name: provider-user
+  datasource:
+    # 基本属性 url、user、password
+    url: jdbc:mysql://101.132.143.174:3306/hewson?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: hewsontest
+    password: test1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 100
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      filters: config,wall,stat
+      pool-prepared-statements: true
+
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxOpenPreparedStatements: 20
+
+#      数据库连接是否加密，用false，不然报错
+      connectionProperties: druid.stat.slowSqlMillis=200;druid.stat.logSlowSql=true;config.decrypt=false
+
+#      配置过滤器
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        session-stat-enable: true
+        session-stat-max-count: 10
+
+#      配置监控
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: admin
+        login-password: admin
+server:
+  port: 8080
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml #mybatis配置文件路径
+  mapper-locations: classpath:mybatis/mapper/*.xml #mybatis映射文件路径
+
