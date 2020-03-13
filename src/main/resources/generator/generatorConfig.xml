@@ -37,7 +37,7 @@
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
         <!-- ★生成映射文件Mapper的包名和位置-->
-        <sqlMapGenerator targetPackage="com.hewson.Mapper" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- ★生成DAO的包名和位置-->
@@ -48,5 +48,6 @@
         <table tableName="t_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
          <table tableName="t_task" domainObjectName="Task" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
         <table tableName="t_star" domainObjectName="Star" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
+        <table tableName="t_taskimg" domainObjectName="TaskIMG" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
     </context>
 </generatorConfiguration>
