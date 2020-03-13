@@ -29,22 +29,22 @@
             -->
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
-        <!-- 生成模型的包名和位置-->
+        <!-- ★生成实体类的包名和位置-->
         <javaModelGenerator targetPackage="springboot06mybatis.pojo" targetProject="src/main/java">
             <!-- 默认false 是否允许子包 -->
             <property name="enableSubPackages" value="false" />
             <!-- 默认false 是否对类CHAR类型的列的数据进行trim操作 -->
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
-        <!-- 生成映射文件的包名和位置-->
+        <!-- ★生成映射文件Mapper的包名和位置-->
         <sqlMapGenerator targetPackage="com.hewson.Mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
-        <!-- 生成DAO的包名和位置-->
+        <!-- ★生成DAO的包名和位置-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="springboot06mybatis.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
-        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <!-- ★要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
         <table tableName="t_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
          <table tableName="t_task" domainObjectName="Task" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>
         <table tableName="t_star" domainObjectName="Star" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"></table>

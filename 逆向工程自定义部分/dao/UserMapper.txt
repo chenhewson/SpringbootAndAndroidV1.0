@@ -1,0 +1,6 @@
+    //自定义部分
+    Integer findByUserName(@Param("username")String username);
+
+    User findByUsernameAndPassword(@Param("username")String username,@Param("password") String password);
+
+    Integer findByEmail(String email);
