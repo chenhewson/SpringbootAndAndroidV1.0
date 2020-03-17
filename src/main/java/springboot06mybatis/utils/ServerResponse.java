@@ -49,6 +49,9 @@ public class ServerResponse<T> {
     public static <T> ServerResponse createServerResponseBySuccess(T data,String msg){
         return new ServerResponse(0,data,msg);
     }
+    public static ServerResponse createServerResponseBySuccess(int status,String msg){
+        return new ServerResponse(status,null,msg);
+    }
 
     //定义接口失败返回静态方法
     public static ServerResponse createServerResponseByFail(int status){

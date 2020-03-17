@@ -93,6 +93,6 @@ public class UserServiceImpl implements UserService {
             //注册失败
             return ServerResponse.createServerResponseByFail(ResponseCode.REGISTER_FAILED.getCode(),ResponseCode.REGISTER_FAILED.getMsg());
         }
-        return ServerResponse.createServerResponseBySuccess();
+        return ServerResponse.createServerResponseBySuccess(ResponseCode.REGISTER_SUCCESS.getCode(),ResponseCode.REGISTER_SUCCESS.getMsg());
     }
 }

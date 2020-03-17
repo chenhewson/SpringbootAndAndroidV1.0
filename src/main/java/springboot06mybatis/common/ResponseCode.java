@@ -18,6 +18,7 @@ public enum ResponseCode {
     EMAILIS_EXIST(7,"邮箱已存在！"),
     USERINFO_IS_EMPTY(8,"用户信息为空！"),
     REGISTER_FAILED(9,"注册失败！"),
+    REGISTER_SUCCESS(10,"注册成功！"),
     ;
     private int code;
     private String msg;
