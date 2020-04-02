@@ -3,6 +3,7 @@ package springboot06mybatis.service;
 
 import org.springframework.stereotype.Service;
 import springboot06mybatis.pojo.Task;
+import springboot06mybatis.pojo.User;
 import springboot06mybatis.utils.ServerResponse;
 
 /**
@@ -15,4 +16,8 @@ import springboot06mybatis.utils.ServerResponse;
 @Service
 public interface TaskService {
     ServerResponse addTask(Task task);
+
+    ServerResponse receiveTask(Task task);
+
+    ServerResponse allTask(User user);
 }

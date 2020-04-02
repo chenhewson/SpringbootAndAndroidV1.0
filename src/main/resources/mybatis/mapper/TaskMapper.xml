@@ -263,4 +263,9 @@
       T_FinishTime = #{tFinishtime,jdbcType=TIMESTAMP}
     where TaskId = #{taskid,jdbcType=INTEGER}
   </update>
+
+<!--  自定义部分-->
+  <select id="AllList" resultType="springboot06mybatis.pojo.Task">
+    select * from t_task where FinisherId=#{userid} or PublishUserId=#{userid}
+  </select>
 </mapper>

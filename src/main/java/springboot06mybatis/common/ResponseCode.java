@@ -24,6 +24,17 @@ public enum ResponseCode {
     ADDTASK_TITLE_EMPTY(12,"标题为空！"),
     ADDTASK_FAILED(13,"添加任务失败！"),
     ADDTASK_SUCCESS(14,"添加任务成功！"),
+
+    RECEIVETASK_SUCCESS(15,"成功接受任务，请按时完成！"),
+    RECEIVETASK_FAILED(16,"接受任务失败！"),
+    RECEIVETASK_TASKID_EMPTY(17,"TaskID为空！"),
+    RECEIVETASK_FINISHERID_EMPTY(18,"FinisherID为空！"),
+    RECEIVETASK_TASK_EMPTY(19,"找不到任务！"),
+    RECEIVETASK_TASK_ISNOTNEW(20,"该任务已被抢走！"),
+
+    ALLTASK_USERID_EMPTY(21,"UserID为空！"),
+    ALLTASK_FAILED(22,"查询失败！"),
+    ALLTASK_SUCCESS(23,"查询成功！"),
     ;
     private int code;
     private String msg;

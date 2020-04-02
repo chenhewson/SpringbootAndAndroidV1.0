@@ -36,9 +36,27 @@ public class TaskController {
 
     @ResponseBody
     @RequestMapping("/Task/addTask.do")
+    //新增任务
     public ServerResponse addtask( Task task) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         logger.info(String.valueOf(task.getPublishuserid()));
         task.settMoney(0.0);
         return taskService.addTask(task);
+    }
+
+    @ResponseBody
+    @RequestMapping("/Task/receiveTask.do")
+    //接受任务
+    public ServerResponse receivetask(Task task) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        logger.info(String.valueOf(task.getTaskid()));
+        logger.info(String.valueOf(task.getFinisherid()));
+        return taskService.receiveTask(task);
+    }
+
+    @ResponseBody
+    @RequestMapping("/Task/allTask.do")
+    //查看全部任务
+    public ServerResponse alltask(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        logger.info(String.valueOf(user.getUserid()));
+        return taskService.allTask(user);
     }
 }
