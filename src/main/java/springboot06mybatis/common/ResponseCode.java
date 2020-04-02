@@ -19,6 +19,11 @@ public enum ResponseCode {
     USERINFO_IS_EMPTY(8,"用户信息为空！"),
     REGISTER_FAILED(9,"注册失败！"),
     REGISTER_SUCCESS(10,"注册成功！"),
+
+    ADDTASK_PUBLISHUSERID_EMPTY(11,"发布者id为空！"),
+    ADDTASK_TITLE_EMPTY(12,"标题为空！"),
+    ADDTASK_FAILED(13,"添加任务失败！"),
+    ADDTASK_SUCCESS(14,"添加任务成功！"),
     ;
     private int code;
     private String msg;

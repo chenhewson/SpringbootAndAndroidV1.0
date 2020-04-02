@@ -1,50 +1,155 @@
-2020-03-17 19:12:51.846  INFO 17660 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 17660 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:12:51.895  INFO 17660 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:12:54.393  INFO 17660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:12:54.502  INFO 17660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:12:54.502  INFO 17660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:12:54.811  INFO 17660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:12:55.029  INFO 17660 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:12:59.710  INFO 17660 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:13:00.597  INFO 17660 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:13:01.027  INFO 17660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:13:01.031  INFO 17660 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 11.159 seconds (JVM running for 17.804)
-2020-03-17 19:13:01.254  INFO 17660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:14:29.251  INFO 17660 --- [http-nio-8080-exec-3] s.Controller.UserController              : chenxiaosen
-2020-03-17 19:14:29.251  INFO 17660 --- [http-nio-8080-exec-3] s.Controller.UserController              : ICy5YqxZB1uWSwcVLSNLcA==
-2020-03-17 19:21:41.587  INFO 17660 --- [http-nio-8080-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+2020-04-02 14:21:11.387  INFO 5196 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 5196 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:21:11.460  INFO 5196 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:21:14.797  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:21:14.847  INFO 5196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:21:14.848  INFO 5196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:21:15.066  INFO 5196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:21:15.320  INFO 5196 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:21:20.187  INFO 5196 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:21:21.191  INFO 5196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:21:21.541  INFO 5196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:21:21.544  INFO 5196 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 13.046 seconds (JVM running for 17.604)
+2020-04-02 14:23:52.037  INFO 5196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:23:52.135  INFO 5196 --- [http-nio-8080-exec-1] s.Controller.UserController              : admin
+2020-04-02 14:23:52.145  INFO 5196 --- [http-nio-8080-exec-1] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 14:24:07.796  INFO 5196 --- [http-nio-8080-exec-3] s.Controller.UserController              : admin
+2020-04-02 14:24:07.797  INFO 5196 --- [http-nio-8080-exec-3] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 14:25:32.453  INFO 5196 --- [http-nio-8080-exec-7] s.Controller.UserController              : admin
+2020-04-02 14:25:32.453  INFO 5196 --- [http-nio-8080-exec-7] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 14:32:27.797  INFO 10396 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 10396 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:32:27.805  INFO 10396 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:32:29.761  INFO 10396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:32:29.778  INFO 10396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:32:29.779  INFO 10396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:32:29.930  INFO 10396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:32:30.114  INFO 10396 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:32:34.091  INFO 10396 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:32:34.762  INFO 10396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:32:35.059  INFO 10396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:32:35.086  INFO 10396 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 8.585 seconds (JVM running for 10.571)
+2020-04-02 14:32:38.812  INFO 10396 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:33:25.628  INFO 13032 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 13032 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:33:25.632  INFO 13032 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:33:27.172  INFO 13032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:33:27.183  INFO 13032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:33:27.184  INFO 13032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:33:27.284  INFO 13032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:33:27.375  INFO 13032 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:33:30.662  INFO 13032 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:33:31.044  INFO 13032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:33:31.285  INFO 13032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:33:31.291  INFO 13032 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.13 seconds (JVM running for 7.452)
+2020-04-02 14:33:38.727  INFO 13032 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:36:39.535  INFO 15104 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 15104 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:36:39.538  INFO 15104 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:36:40.817  INFO 15104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:36:40.828  INFO 15104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:36:40.828  INFO 15104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:36:40.908  INFO 15104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:36:41.007  INFO 15104 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:36:44.148  INFO 15104 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:36:44.613  INFO 15104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:36:44.814  INFO 15104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:36:44.819  INFO 15104 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.732 seconds (JVM running for 7.085)
+2020-04-02 14:36:48.750  INFO 15104 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:36:48.829  INFO 15104 --- [http-nio-8080-exec-2] s.Controller.UserController              : 打饭
+2020-04-02 14:37:35.662  INFO 448 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 448 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:37:35.665  INFO 448 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:37:36.968  INFO 448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:37:36.976  INFO 448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:37:36.976  INFO 448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:37:37.061  INFO 448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:37:37.151  INFO 448 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:37:40.093  INFO 448 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:37:40.500  INFO 448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:37:40.726  INFO 448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:37:40.729  INFO 448 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.49 seconds (JVM running for 6.781)
+2020-04-02 14:37:43.210  INFO 448 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:37:43.263  INFO 448 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 14:38:47.525  INFO 448 --- [http-nio-8080-exec-5] s.Controller.UserController              : null
+2020-04-02 14:39:30.159  INFO 13612 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 13612 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:39:30.170  INFO 13612 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:39:31.432  INFO 13612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:39:31.440  INFO 13612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:39:31.440  INFO 13612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:39:31.520  INFO 13612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:39:31.603  INFO 13612 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:39:34.683  INFO 13612 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:39:35.031  INFO 13612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:39:35.255  INFO 13612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:39:35.259  INFO 13612 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.573 seconds (JVM running for 6.787)
+2020-04-02 14:39:38.161  INFO 13612 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:39:38.211  INFO 13612 --- [http-nio-8080-exec-2] s.Controller.UserController              : 116.40
+2020-04-02 14:40:49.775  INFO 13612 --- [http-nio-8080-exec-5] s.Controller.UserController              : 116.40
+2020-04-02 14:51:49.532  INFO 13624 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 13624 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:51:49.543  INFO 13624 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:51:50.879  INFO 13624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:51:50.889  INFO 13624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:51:50.890  INFO 13624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:51:51.006  INFO 13624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:51:51.227  INFO 13624 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:51:55.942  INFO 13624 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:51:56.558  INFO 13624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:51:56.817  INFO 13624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:51:56.820  INFO 13624 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 8.374 seconds (JVM running for 10.004)
+2020-04-02 14:51:59.517  INFO 13624 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:51:59.570  INFO 13624 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 14:53:33.920  INFO 10276 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 10276 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:53:33.923  INFO 10276 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:53:35.185  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:53:35.193  INFO 10276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:53:35.193  INFO 10276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:53:35.272  INFO 10276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:53:35.354  INFO 10276 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:53:38.736  INFO 10276 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:53:39.074  INFO 10276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:53:39.276  INFO 10276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:53:39.280  INFO 10276 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.771 seconds (JVM running for 6.988)
+2020-04-02 14:53:42.764  INFO 10276 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:53:42.825  INFO 10276 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 14:53:43.374 ERROR 10276 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: '' for column 'PublishUserId' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect integer value: '' for column 'PublishUserId' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect integer value: '' for column 'PublishUserId' at row 1; nested exception is java.sql.SQLException: Incorrect integer value: '' for column 'PublishUserId' at row 1] with root cause
 
-java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:468) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
-
-2020-03-17 19:22:10.100  INFO 3356 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 3356 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:22:10.110  INFO 3356 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:22:12.240  INFO 3356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:22:12.256  INFO 3356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:22:12.257  INFO 3356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:22:12.507  INFO 3356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:22:12.733  INFO 3356 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:22:17.241  INFO 3356 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:22:17.914  INFO 3356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:22:18.192  INFO 3356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:22:18.195  INFO 3356 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 9.626 seconds (JVM running for 12.272)
-2020-03-17 19:22:53.453  INFO 3356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:22:53.623 ERROR 3356 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect integer value: '' for column 'PublishUserId' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:35) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -99,24 +204,136 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:23:24.182  INFO 9060 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 9060 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:23:24.195  INFO 9060 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:23:25.840  INFO 9060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:23:25.857  INFO 9060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:23:25.858  INFO 9060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:23:25.996  INFO 9060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:23:26.429  INFO 9060 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:23:31.139  INFO 9060 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:23:31.531  INFO 9060 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:23:31.735  INFO 9060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:23:31.739  INFO 9060 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 8.65 seconds (JVM running for 11.14)
-2020-03-17 19:24:45.801  INFO 9060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:24:45.992 ERROR 9060 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2020-04-02 14:54:34.105  INFO 11348 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11348 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:54:34.108  INFO 11348 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:54:35.526  INFO 11348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:54:35.536  INFO 11348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:54:35.536  INFO 11348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:54:35.616  INFO 11348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:54:35.710  INFO 11348 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:54:39.480  INFO 11348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:54:39.902  INFO 11348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:54:40.136  INFO 11348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:54:40.140  INFO 11348 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.532 seconds (JVM running for 7.841)
+2020-04-02 14:54:47.343  INFO 11348 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:54:47.407  INFO 11348 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 14:55:32.302  INFO 1476 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 1476 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:55:32.306  INFO 1476 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:55:33.551  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:55:33.560  INFO 1476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:55:33.560  INFO 1476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:55:33.640  INFO 1476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:55:33.734  INFO 1476 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:55:37.120  INFO 1476 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:55:37.475  INFO 1476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:55:37.677  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:55:37.681  INFO 1476 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.844 seconds (JVM running for 7.115)
+2020-04-02 14:55:52.750  INFO 3916 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 3916 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:55:52.752  INFO 3916 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:55:53.962  INFO 3916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:55:53.971  INFO 3916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:55:53.972  INFO 3916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:55:54.056  INFO 3916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:55:54.139  INFO 3916 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:55:57.197  INFO 3916 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:55:57.795  INFO 3916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:55:58.031  INFO 3916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:55:58.036  INFO 3916 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.794 seconds (JVM running for 7.038)
+2020-04-02 14:59:34.799  INFO 2804 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 2804 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 14:59:34.811  INFO 2804 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 14:59:36.325  INFO 2804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 14:59:36.335  INFO 2804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 14:59:36.335  INFO 2804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 14:59:36.416  INFO 2804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 14:59:36.510  INFO 2804 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 14:59:39.499  INFO 2804 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 14:59:39.853  INFO 2804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 14:59:40.056  INFO 2804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 14:59:40.060  INFO 2804 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.777 seconds (JVM running for 7.069)
+2020-04-02 14:59:42.622  INFO 2804 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 14:59:42.682  INFO 2804 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 14:59:42.683  INFO 2804 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:00:00.585  INFO 2804 --- [http-nio-8080-exec-3] s.Controller.UserController              : null
+2020-04-02 15:00:00.590  INFO 2804 --- [http-nio-8080-exec-3] s.Controller.UserController              : 2.0
+2020-04-02 15:02:08.795  INFO 6432 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 6432 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:02:08.799  INFO 6432 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:02:10.304  INFO 6432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:02:10.314  INFO 6432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:02:10.314  INFO 6432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:02:10.399  INFO 6432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:02:10.488  INFO 6432 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:02:13.593  INFO 6432 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:02:13.958  INFO 6432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:02:14.181  INFO 6432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:02:14.185  INFO 6432 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.794 seconds (JVM running for 7.173)
+2020-04-02 15:02:22.562  INFO 6432 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:02:22.622  INFO 6432 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 15:02:22.622  INFO 6432 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:02:36.866  WARN 6432 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'task' on field 'tMoney': rejected value [你好]; codes [typeMismatch.task.tMoney,typeMismatch.tMoney,typeMismatch.java.lang.Double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [task.tMoney,tMoney]; arguments []; default message [tMoney]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Double' for property 'tMoney'; nested exception is java.lang.NumberFormatException: For input string: "你好"]]
+2020-04-02 15:03:20.519  INFO 6432 --- [http-nio-8080-exec-5] s.Controller.UserController              : null
+2020-04-02 15:03:20.520  INFO 6432 --- [http-nio-8080-exec-5] s.Controller.UserController              : 10.0
+2020-04-02 15:04:08.996  INFO 6432 --- [http-nio-8080-exec-6] s.Controller.UserController              : null
+2020-04-02 15:04:08.996  INFO 6432 --- [http-nio-8080-exec-6] s.Controller.UserController              : 10.0
+2020-04-02 15:04:15.435  INFO 6432 --- [http-nio-8080-exec-7] s.Controller.UserController              : null
+2020-04-02 15:04:15.436  INFO 6432 --- [http-nio-8080-exec-7] s.Controller.UserController              : 10.0
+2020-04-02 15:10:58.538  INFO 11536 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11536 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:10:58.542  INFO 11536 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:10:59.928  INFO 11536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:10:59.940  INFO 11536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:10:59.941  INFO 11536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:11:00.064  INFO 11536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:11:00.159  INFO 11536 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:11:03.130  INFO 11536 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:11:03.488  INFO 11536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:11:03.688  INFO 11536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:11:03.693  INFO 11536 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.615 seconds (JVM running for 6.957)
+2020-04-02 15:11:08.452  INFO 11536 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:11:08.503  INFO 11536 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:11:08.503  INFO 11536 --- [http-nio-8080-exec-2] s.Controller.UserController              : 10.0
+2020-04-02 15:11:08.964 ERROR 11536 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
 
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -171,12 +388,51 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:26:31.140 ERROR 9060 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2020-04-02 15:12:51.270  INFO 11536 --- [http-nio-8080-exec-4] s.Controller.UserController              : 
+2020-04-02 15:12:51.272  INFO 11536 --- [http-nio-8080-exec-4] s.Controller.UserController              : 2.0
+2020-04-02 15:12:51.394 ERROR 11536 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
 
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -231,12 +487,51 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:27:34.517 ERROR 9060 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2020-04-02 15:12:57.967  INFO 11536 --- [http-nio-8080-exec-5] s.Controller.UserController              : 
+2020-04-02 15:12:57.967  INFO 11536 --- [http-nio-8080-exec-5] s.Controller.UserController              : 2.0
+2020-04-02 15:12:58.035 ERROR 11536 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
 
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -291,12 +586,51 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:28:56.734 ERROR 9060 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2020-04-02 15:13:31.477  INFO 11536 --- [http-nio-8080-exec-7] s.Controller.UserController              : 
+2020-04-02 15:13:31.478  INFO 11536 --- [http-nio-8080-exec-7] s.Controller.UserController              : 2.0
+2020-04-02 15:13:31.532 ERROR 11536 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
 
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -351,12 +685,51 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:30:18.449 ERROR 9060 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2020-04-02 15:13:35.790  INFO 11536 --- [http-nio-8080-exec-9] s.Controller.UserController              : 
+2020-04-02 15:13:35.791  INFO 11536 --- [http-nio-8080-exec-9] s.Controller.UserController              : 2.0
+2020-04-02 15:13:35.965 ERROR 11536 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
 
-java.lang.NullPointerException: null
-	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
-	at springboot06mybatis.service.impl.UserServiceImpl.registerLogic(UserServiceImpl.java:63) ~[classes/:na]
-	at springboot06mybatis.Controller.UserController.register(UserController.java:46) ~[classes/:na]
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
@@ -411,41 +784,875 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
 
-2020-03-17 19:31:39.501  INFO 1320 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 1320 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:31:39.522  INFO 1320 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:31:41.618  INFO 1320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:31:41.662  INFO 1320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:31:41.663  INFO 1320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:31:41.988  INFO 1320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:31:42.254  INFO 1320 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:31:46.874  INFO 1320 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:31:47.729  INFO 1320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:31:48.065  INFO 1320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:31:48.068  INFO 1320 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 10.761 seconds (JVM running for 14.752)
-2020-03-17 19:32:00.189  INFO 1320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:37:25.232  INFO 16704 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 16704 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:37:25.235  INFO 16704 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:37:27.096  INFO 16704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:37:27.114  INFO 16704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:37:27.115  INFO 16704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:37:27.259  INFO 16704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:37:27.699  INFO 16704 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:37:32.800  INFO 16704 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:37:34.597  INFO 16704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:37:35.263  INFO 16704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:37:35.301  INFO 16704 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 11.633 seconds (JVM running for 13.974)
-2020-03-17 19:38:06.703  INFO 16704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:52:39.517  INFO 14936 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 14936 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
-2020-03-17 19:52:39.542  INFO 14936 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
-2020-03-17 19:52:42.220  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-17 19:52:42.264  INFO 14936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-17 19:52:42.264  INFO 14936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-03-17 19:52:42.493  INFO 14936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-17 19:52:42.735  INFO 14936 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2020-03-17 19:52:47.141  INFO 14936 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-03-17 19:52:48.048  INFO 14936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-17 19:52:48.329  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-17 19:52:48.333  INFO 14936 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 10.922 seconds (JVM running for 14.192)
-2020-03-17 19:52:48.410  INFO 14936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-17 19:54:10.169  INFO 14936 --- [http-nio-8080-exec-8] s.Controller.UserController              : admin1
-2020-03-17 19:54:10.170  INFO 14936 --- [http-nio-8080-exec-8] s.Controller.UserController              : 4AzyWtQmg7PfZ4xh9Cxr2g==
+2020-04-02 15:14:45.402  INFO 15072 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 15072 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:14:45.405  INFO 15072 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:14:46.809  INFO 15072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:14:46.818  INFO 15072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:14:46.819  INFO 15072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:14:46.907  INFO 15072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:14:47.032  INFO 15072 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:14:50.315  INFO 15072 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:14:50.769  INFO 15072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:14:51.035  INFO 15072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:14:51.038  INFO 15072 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.156 seconds (JVM running for 7.446)
+2020-04-02 15:15:03.309  INFO 15072 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:15:03.416  INFO 15072 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:15:03.416  INFO 15072 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:15:03.906 ERROR 15072 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
+
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:36) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 15:20:06.739  INFO 6848 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 6848 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:20:06.743  INFO 6848 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:20:08.023  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:20:08.032  INFO 6848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:20:08.033  INFO 6848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:20:08.121  INFO 6848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:20:08.208  INFO 6848 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:20:11.243  INFO 6848 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:20:11.585  INFO 6848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:20:11.794  INFO 6848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:20:11.797  INFO 6848 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.488 seconds (JVM running for 6.684)
+2020-04-02 15:20:14.775  INFO 6848 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:20:14.872  INFO 6848 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:20:14.873  INFO 6848 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:20:15.210 ERROR 6848 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
+
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 15:23:27.783  INFO 6848 --- [http-nio-8080-exec-4] s.Controller.UserController              : 
+2020-04-02 15:23:27.784  INFO 6848 --- [http-nio-8080-exec-4] s.Controller.UserController              : 2.0
+2020-04-02 15:23:27.881 ERROR 6848 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
+
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 15:24:33.230  INFO 6848 --- [http-nio-8080-exec-6] s.Controller.UserController              : 
+2020-04-02 15:24:33.230  INFO 6848 --- [http-nio-8080-exec-6] s.Controller.UserController              : 2.0
+2020-04-02 15:24:33.652 ERROR 6848 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+### The error may exist in file [F:\IdeaProjects\SpringBootAndroid\target\classes\mybatis\mapper\TaskMapper.xml]
+### The error may involve springboot06mybatis.dao.TaskMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_task (TaskId, PublishUserId, FinisherId,        T_Title, T_Money, T_jingdu,        T_weidu, T_isNew, T_isDone, T_isDestroy,        T_CreateTime, T_BeginTime, T_FinishTime,        T_Detail)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1] with root cause
+
+java.sql.SQLException: Incorrect string value: '\xE6\x89\x93\xE9\xA5\xAD' for column 'T_Title' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.17.jar:1.1.17]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy62.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy63.insert(Unknown Source) ~[na:na]
+	at springboot06mybatis.service.impl.TaskServiceImpl.addTask(TaskServiceImpl.java:35) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 15:29:19.285  INFO 6848 --- [http-nio-8080-exec-7] s.Controller.UserController              : 
+2020-04-02 15:29:19.286  INFO 6848 --- [http-nio-8080-exec-7] s.Controller.UserController              : 2.0
+2020-04-02 15:37:14.766  INFO 4376 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 4376 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:37:14.769  INFO 4376 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:37:16.188  INFO 4376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:37:16.196  INFO 4376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:37:16.197  INFO 4376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:37:16.277  INFO 4376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:37:16.359  INFO 4376 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:37:19.984  INFO 4376 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:37:20.372  INFO 4376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:37:20.606  INFO 4376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:37:20.610  INFO 4376 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.29 seconds (JVM running for 7.671)
+2020-04-02 15:37:23.440  INFO 4376 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:37:23.549  INFO 4376 --- [http-nio-8080-exec-2] s.Controller.UserController              : admin
+2020-04-02 15:37:23.553  INFO 4376 --- [http-nio-8080-exec-2] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 15:38:25.945  INFO 4376 --- [http-nio-8080-exec-3] s.Controller.UserController              : 
+2020-04-02 15:38:25.946  INFO 4376 --- [http-nio-8080-exec-3] s.Controller.UserController              : 2.0
+2020-04-02 15:39:28.270  INFO 4376 --- [http-nio-8080-exec-7] s.Controller.UserController              : null
+2020-04-02 15:39:28.270  INFO 4376 --- [http-nio-8080-exec-7] s.Controller.UserController              : 2.0
+2020-04-02 15:40:23.618  INFO 4376 --- [http-nio-8080-exec-9] s.Controller.UserController              : 
+2020-04-02 15:40:23.618  INFO 4376 --- [http-nio-8080-exec-9] s.Controller.UserController              : 2.0
+2020-04-02 15:40:33.339  INFO 4376 --- [http-nio-8080-exec-10] s.Controller.UserController              : 
+2020-04-02 15:40:33.339  INFO 4376 --- [http-nio-8080-exec-10] s.Controller.UserController              : 2.0
+2020-04-02 15:40:39.781  INFO 4376 --- [http-nio-8080-exec-1] s.Controller.UserController              : 
+2020-04-02 15:40:39.781  INFO 4376 --- [http-nio-8080-exec-1] s.Controller.UserController              : 2.0
+2020-04-02 15:41:59.880  INFO 9100 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 9100 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:41:59.924  INFO 9100 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:42:01.205  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:42:01.215  INFO 9100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:42:01.215  INFO 9100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:42:01.301  INFO 9100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:42:01.403  INFO 9100 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:42:04.679  INFO 9100 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:42:05.028  INFO 9100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:42:05.242  INFO 9100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:42:05.246  INFO 9100 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.797 seconds (JVM running for 7.023)
+2020-04-02 15:42:07.488  INFO 9100 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:42:07.549  INFO 9100 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:42:07.549  INFO 9100 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:46:58.049  INFO 5200 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 5200 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:46:58.057  INFO 5200 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:46:59.431  INFO 5200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:46:59.439  INFO 5200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:46:59.440  INFO 5200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:46:59.527  INFO 5200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:46:59.694  INFO 5200 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:47:03.273  INFO 5200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:47:03.743  INFO 5200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:47:04.062  INFO 5200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:47:04.068  INFO 5200 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.61 seconds (JVM running for 7.895)
+2020-04-02 15:47:04.163  INFO 5200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:47:04.228  INFO 5200 --- [http-nio-8080-exec-1] s.Controller.UserController              : 
+2020-04-02 15:47:04.228  INFO 5200 --- [http-nio-8080-exec-1] s.Controller.UserController              : 2.0
+2020-04-02 15:47:31.849  INFO 1508 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 1508 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:47:31.853  INFO 1508 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:47:33.446  INFO 1508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:47:33.454  INFO 1508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:47:33.455  INFO 1508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:47:33.540  INFO 1508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:47:33.632  INFO 1508 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:47:36.479  INFO 1508 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:47:36.822  INFO 1508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:47:37.016  INFO 1508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:47:37.019  INFO 1508 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.618 seconds (JVM running for 6.855)
+2020-04-02 15:47:46.138  INFO 1508 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:47:46.205  INFO 1508 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:47:46.205  INFO 1508 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:48:03.943  INFO 992 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 992 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:48:03.946  INFO 992 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:48:05.480  INFO 992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:48:05.490  INFO 992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:48:05.490  INFO 992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:48:05.580  INFO 992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:48:05.672  INFO 992 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:48:09.121  INFO 992 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:48:09.574  INFO 992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:48:09.805  INFO 992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:48:09.809  INFO 992 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.428 seconds (JVM running for 7.852)
+2020-04-02 15:48:14.847  INFO 992 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:48:14.987  INFO 992 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:48:14.988  INFO 992 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:48:57.619  INFO 14812 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 14812 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:48:57.622  INFO 14812 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:48:58.879  INFO 14812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:48:58.887  INFO 14812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:48:58.888  INFO 14812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:48:58.969  INFO 14812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:48:59.053  INFO 14812 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:49:02.397  INFO 14812 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:49:02.737  INFO 14812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:49:02.936  INFO 14812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:49:02.939  INFO 14812 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.741 seconds (JVM running for 6.983)
+2020-04-02 15:49:08.849  INFO 14812 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:49:08.919  INFO 14812 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:49:08.920  INFO 14812 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:49:31.268  INFO 3560 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 3560 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:49:31.271  INFO 3560 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:49:32.829  INFO 3560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:49:32.837  INFO 3560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:49:32.837  INFO 3560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:49:32.917  INFO 3560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:49:33.002  INFO 3560 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:49:36.141  INFO 3560 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:49:36.628  INFO 3560 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:49:36.856  INFO 3560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:49:36.859  INFO 3560 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.074 seconds (JVM running for 7.458)
+2020-04-02 15:49:47.897  INFO 3560 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:49:47.982  INFO 3560 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2
+2020-04-02 15:49:47.982  INFO 3560 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:50:14.866  INFO 8980 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 8980 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:50:14.869  INFO 8980 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:50:16.334  INFO 8980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:50:16.345  INFO 8980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:50:16.346  INFO 8980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:50:16.448  INFO 8980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:50:16.531  INFO 8980 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:50:19.713  INFO 8980 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:50:20.105  INFO 8980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:50:20.303  INFO 8980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:50:20.307  INFO 8980 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.902 seconds (JVM running for 7.489)
+2020-04-02 15:50:35.173  INFO 8980 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:50:35.237  INFO 8980 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:50:35.237  INFO 8980 --- [http-nio-8080-exec-2] s.Controller.UserController              : 2.0
+2020-04-02 15:55:03.296  INFO 11408 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11408 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:55:03.299  INFO 11408 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:55:04.837  INFO 11408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:55:04.845  INFO 11408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:55:04.845  INFO 11408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:55:04.924  INFO 11408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:55:05.016  INFO 11408 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:55:08.135  INFO 11408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:55:08.507  INFO 11408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:55:08.691  INFO 11408 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-02 15:55:08.697  INFO 11408 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-02 15:55:08.705 ERROR 11408 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-04-02 15:55:08.708  INFO 11408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:55:08.709  INFO 11408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-04-02 15:55:08.730  INFO 11408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-04-02 15:55:38.912  INFO 2300 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 2300 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:55:38.915  INFO 2300 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:55:40.086  INFO 2300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:55:40.094  INFO 2300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:55:40.094  INFO 2300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:55:40.173  INFO 2300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:55:40.263  INFO 2300 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:55:43.369  INFO 2300 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:55:43.700  INFO 2300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:55:43.893  INFO 2300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:55:43.896  INFO 2300 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.393 seconds (JVM running for 6.586)
+2020-04-02 15:55:49.342  INFO 2300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:55:49.402  INFO 2300 --- [http-nio-8080-exec-1] s.Controller.UserController              : 
+2020-04-02 15:55:49.402  INFO 2300 --- [http-nio-8080-exec-1] s.Controller.UserController              : 2.0
+2020-04-02 15:57:31.568  INFO 2504 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 2504 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:57:31.573  INFO 2504 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:57:32.911  INFO 2504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:57:32.921  INFO 2504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:57:32.921  INFO 2504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:57:33.004  INFO 2504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:57:33.089  INFO 2504 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:57:36.276  INFO 2504 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:57:36.690  INFO 2504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:57:36.893  INFO 2504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:57:36.897  INFO 2504 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.798 seconds (JVM running for 7.23)
+2020-04-02 15:57:39.453  INFO 2504 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:57:39.502  INFO 2504 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:59:04.679  INFO 14244 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 14244 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:59:04.682  INFO 14244 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:59:06.104  INFO 14244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:59:06.112  INFO 14244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:59:06.112  INFO 14244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:59:06.193  INFO 14244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:59:06.284  INFO 14244 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:59:09.388  INFO 14244 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:59:09.721  INFO 14244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:59:09.904  INFO 14244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:59:09.907  INFO 14244 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.621 seconds (JVM running for 6.807)
+2020-04-02 15:59:11.946  INFO 14244 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:59:12.092  INFO 14244 --- [http-nio-8080-exec-2] s.Controller.UserController              : 
+2020-04-02 15:59:12.093  INFO 14244 --- [http-nio-8080-exec-2] s.Controller.UserController              : 第四节下课帮我打饭
+2020-04-02 15:59:40.223  INFO 7204 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 7204 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 15:59:40.226  INFO 7204 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 15:59:41.609  INFO 7204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 15:59:41.618  INFO 7204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 15:59:41.619  INFO 7204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 15:59:41.711  INFO 7204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 15:59:41.788  INFO 7204 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 15:59:44.722  INFO 7204 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 15:59:45.050  INFO 7204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 15:59:45.238  INFO 7204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 15:59:45.241  INFO 7204 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.445 seconds (JVM running for 6.644)
+2020-04-02 15:59:47.777  INFO 7204 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 15:59:47.823  INFO 7204 --- [http-nio-8080-exec-3] s.Controller.UserController              : null
+2020-04-02 15:59:47.823  INFO 7204 --- [http-nio-8080-exec-3] s.Controller.UserController              : 第四节下课帮我打饭
+2020-04-02 16:01:13.395  INFO 7204 --- [http-nio-8080-exec-5] s.Controller.UserController              : 11
+2020-04-02 16:01:13.395  INFO 7204 --- [http-nio-8080-exec-5] s.Controller.UserController              : 33
+2020-04-02 16:02:33.792  INFO 4580 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 4580 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:02:33.796  INFO 4580 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:02:34.930  INFO 4580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:02:34.937  INFO 4580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:02:34.937  INFO 4580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:02:35.014  INFO 4580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:02:35.094  INFO 4580 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:02:38.254  INFO 4580 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:02:38.581  INFO 4580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:02:38.771  INFO 4580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:02:38.774  INFO 4580 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.517 seconds (JVM running for 6.856)
+2020-04-02 16:02:41.754  INFO 4580 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:02:41.823  INFO 4580 --- [http-nio-8080-exec-2] s.Controller.UserController              : null
+2020-04-02 16:02:41.887 ERROR 4580 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:42) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 16:03:49.744  INFO 10732 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 10732 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:03:49.750  INFO 10732 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:03:51.250  INFO 10732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:03:51.265  INFO 10732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:03:51.266  INFO 10732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:03:51.395  INFO 10732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:03:51.614  INFO 10732 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:03:54.716  INFO 10732 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:03:55.161  INFO 10732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:03:55.451  INFO 10732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:03:55.455  INFO 10732 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.526 seconds (JVM running for 7.782)
+2020-04-02 16:03:55.992  INFO 10732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:03:56.082  INFO 10732 --- [http-nio-8080-exec-1] s.Controller.UserController              : 吃饭
+2020-04-02 16:03:56.124 ERROR 10732 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at springboot06mybatis.utils.String2utf_8.setString2utf_8(String2utf_8.java:15) ~[classes/:na]
+	at springboot06mybatis.Controller.TaskController.addtask(TaskController.java:42) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_231]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_231]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_231]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_231]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.17.jar:1.1.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_231]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_231]
+
+2020-04-02 16:04:31.321  INFO 7464 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 7464 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:04:31.324  INFO 7464 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:04:32.780  INFO 7464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:04:32.790  INFO 7464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:04:32.790  INFO 7464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:04:32.872  INFO 7464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:04:32.955  INFO 7464 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:04:36.444  INFO 7464 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:04:36.821  INFO 7464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:04:37.042  INFO 7464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:04:37.047  INFO 7464 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.206 seconds (JVM running for 7.531)
+2020-04-02 16:04:37.549  INFO 7464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:04:37.622  INFO 7464 --- [http-nio-8080-exec-1] s.Controller.UserController              : 11
+2020-04-02 16:06:18.743  INFO 7464 --- [http-nio-8080-exec-3] s.Controller.UserController              : admin
+2020-04-02 16:06:18.753  INFO 7464 --- [http-nio-8080-exec-3] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 16:08:37.832  INFO 7464 --- [http-nio-8080-exec-6] s.Controller.UserController              : 11
+2020-04-02 16:09:41.006  INFO 7464 --- [http-nio-8080-exec-9] s.Controller.UserController              : 11
+2020-04-02 16:12:01.092  INFO 7464 --- [http-nio-8080-exec-2] s.Controller.UserController              : 11
+2020-04-02 16:15:56.512  INFO 11476 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11476 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:15:56.515  INFO 11476 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:15:57.938  INFO 11476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:15:57.947  INFO 11476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:15:57.947  INFO 11476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:15:58.036  INFO 11476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:15:58.136  INFO 11476 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:16:01.264  INFO 11476 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:16:01.932  INFO 11476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:16:02.235  INFO 11476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:16:02.238  INFO 11476 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.145 seconds (JVM running for 7.53)
+2020-04-02 16:16:04.514  INFO 11476 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:16:04.658  INFO 11476 --- [http-nio-8080-exec-2] s.Controller.UserController              : 11
+2020-04-02 16:16:44.308  INFO 11476 --- [http-nio-8080-exec-3] s.Controller.UserController              : 11
+2020-04-02 16:16:44.518 ERROR 11476 --- [http-nio-8080-exec-3] c.alibaba.druid.filter.stat.StatFilter   : slow sql 206 millis. insert into t_task (TaskId, PublishUserId, FinisherId, 
+      T_Title, T_Money, T_jingdu, 
+      T_weidu, T_isNew, T_isDone, T_isDestroy, 
+      T_CreateTime, T_BeginTime, T_FinishTime, 
+      T_Detail)
+    values (?, ?, ?, 
+      ?, ?, ?, 
+      ?, ?, ?, ?, 
+      ?, ?, ?, 
+      ?)[null,"11",null,"吃饭",null,116.40,39.90,true,false,false,null,null,null,"周四下课帮忙打饭"]
+2020-04-02 16:17:30.827  INFO 11708 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11708 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:17:30.830  INFO 11708 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:17:32.245  INFO 11708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:17:32.255  INFO 11708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:17:32.255  INFO 11708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:17:32.378  INFO 11708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:17:32.484  INFO 11708 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:17:35.854  INFO 11708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:17:36.221  INFO 11708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:17:36.440  INFO 11708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:17:36.443  INFO 11708 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.077 seconds (JVM running for 7.411)
+2020-04-02 16:17:49.101  INFO 11708 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:17:49.154  INFO 11708 --- [http-nio-8080-exec-2] s.Controller.UserController              : 11
+2020-04-02 16:18:15.076  INFO 8648 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 8648 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:18:15.079  INFO 8648 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:18:16.790  INFO 8648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:18:16.801  INFO 8648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:18:16.802  INFO 8648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:18:16.892  INFO 8648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:18:17.064  INFO 8648 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:18:20.623  INFO 8648 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:18:21.035  INFO 8648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:18:21.541  INFO 8648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:18:21.549  INFO 8648 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 7.07 seconds (JVM running for 8.654)
+2020-04-02 16:18:24.386  INFO 8648 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:18:24.455  INFO 8648 --- [http-nio-8080-exec-2] s.Controller.UserController              : 11
+2020-04-02 16:19:33.882  INFO 8648 --- [http-nio-8080-exec-5] s.Controller.UserController              : admin3
+2020-04-02 16:19:33.883  INFO 8648 --- [http-nio-8080-exec-5] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
+2020-04-02 16:21:28.347  INFO 2888 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 2888 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:21:28.350  INFO 2888 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:21:29.717  INFO 2888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:21:29.727  INFO 2888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:21:29.727  INFO 2888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:21:29.839  INFO 2888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:21:29.952  INFO 2888 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:21:33.275  INFO 2888 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:21:33.880  INFO 2888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:21:34.173  INFO 2888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:21:34.177  INFO 2888 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.245 seconds (JVM running for 8.125)
+2020-04-02 16:21:46.351  INFO 2888 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:21:46.420  INFO 2888 --- [http-nio-8080-exec-2] s.Controller.UserController              : 11
+2020-04-02 16:23:03.265  INFO 6408 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 6408 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-04-02 16:23:03.271  INFO 6408 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-04-02 16:23:04.828  INFO 6408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-02 16:23:04.841  INFO 6408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 16:23:04.841  INFO 6408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-04-02 16:23:04.944  INFO 6408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:23:05.050  INFO 6408 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-04-02 16:23:08.719  INFO 6408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 16:23:09.410  INFO 6408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:23:09.804  INFO 6408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-02 16:23:09.809  INFO 6408 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 7.068 seconds (JVM running for 8.616)
+2020-04-02 16:23:50.280  INFO 6408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:24:01.951  INFO 6408 --- [http-nio-8080-exec-2] s.Controller.UserController              : admin
+2020-04-02 16:24:01.951  INFO 6408 --- [http-nio-8080-exec-2] s.Controller.UserController              : ISMvKXpXpadDiUoOSoAfww==
