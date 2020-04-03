@@ -19,6 +19,11 @@ import springboot06mybatis.utils.String2utf_8;
 import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Time;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * ClassName:    OrderController
@@ -40,6 +45,8 @@ public class TaskController {
     public ServerResponse addtask( Task task) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         logger.info(String.valueOf(task.getPublishuserid()));
         task.settMoney(0.0);
+//        DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        task.settCreatetime(new java.sql.Date(new java.util.Date().getTime()));
         return taskService.addTask(task);
     }
 
