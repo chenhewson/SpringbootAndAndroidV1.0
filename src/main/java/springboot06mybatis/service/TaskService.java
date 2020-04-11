@@ -15,7 +15,7 @@ import springboot06mybatis.utils.ServerResponse;
  */
 @Service
 public interface TaskService {
-    ServerResponse addTask(Task task);
+    ServerResponse addTask(Task task,String address);
 
     ServerResponse receiveTask(Task task);
 

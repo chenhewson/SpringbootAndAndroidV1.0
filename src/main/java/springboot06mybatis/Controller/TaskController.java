@@ -1,10 +1,13 @@
 package springboot06mybatis.Controller;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,6 +16,7 @@ import springboot06mybatis.common.Const;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.TaskService;
+import springboot06mybatis.utils.HttpClient;
 import springboot06mybatis.utils.ServerResponse;
 import springboot06mybatis.utils.String2utf_8;
 
@@ -24,6 +28,7 @@ import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * ClassName:    OrderController
@@ -42,12 +47,24 @@ public class TaskController {
     @ResponseBody
     @RequestMapping("/Task/addTask.do")
     //新增任务
-    public ServerResponse addtask( Task task) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+    public ServerResponse addtask( Task task,@Param("address") String address) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         logger.info(String.valueOf(task.getPublishuserid()));
-        task.settMoney(0.0);
 //        DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         task.settCreatetime(new java.sql.Date(new java.util.Date().getTime()));
-        return taskService.addTask(task);
+
+        //赏金若为空
+        if(task.gettMoney()==null){
+            task.settMoney(0.0);
+        }
+
+//        //中文地址转经纬度
+//        System.out.println(address);
+//        HashMap<String, String> hashMapMap = new HashMap<String,String>();
+//        hashMapMap.put("address",address);
+//        String addressJSON=HttpClient.sendGetRequest(hashMapMap);
+//        System.out.println(addressJSON);
+//        JSONObject data0=JSONObject.parseObject(addressJSON);
+        return taskService.addTask(task,address);
     }
 
     @ResponseBody

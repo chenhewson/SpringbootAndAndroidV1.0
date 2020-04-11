@@ -264,8 +264,8 @@
     where TaskId = #{taskid,jdbcType=INTEGER}
   </update>
 
-<!--  自定义部分-->
-  <select id="AllList" resultType="springboot06mybatis.pojo.Task">
+<!--  自定义部分,注意，这里的resultMap要和逆向生成的一样，否则会出现有下划线的字段是null的结果-->
+  <select id="AllList" resultMap="ResultMapWithBLOBs">
     select * from t_task where FinisherId=#{userid} or PublishUserId=#{userid}
   </select>
 </mapper>

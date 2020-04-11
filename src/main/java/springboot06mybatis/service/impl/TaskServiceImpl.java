@@ -1,15 +1,22 @@
 package springboot06mybatis.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import springboot06mybatis.common.Const;
 import springboot06mybatis.common.ResponseCode;
 import springboot06mybatis.dao.TaskMapper;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.TaskService;
+import springboot06mybatis.utils.HttpClient;
+import springboot06mybatis.utils.MathUtils;
 import springboot06mybatis.utils.ServerResponse;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -24,7 +31,7 @@ public class TaskServiceImpl implements TaskService {
     @Autowired
     TaskMapper taskMapper;
     @Override
-    public ServerResponse addTask(Task task) {
+    public ServerResponse addTask(Task task,String address) {
         //发布者id为空
         if(task.getPublishuserid()==null||task.getPublishuserid().equals("")){
             return ServerResponse.createServerResponseByFail(ResponseCode.ADDTASK_PUBLISHUSERID_EMPTY.getCode(),ResponseCode.ADDTASK_PUBLISHUSERID_EMPTY.getMsg());
@@ -35,9 +42,24 @@ public class TaskServiceImpl implements TaskService {
             return ServerResponse.createServerResponseByFail(ResponseCode.ADDTASK_TITLE_EMPTY.getCode(),ResponseCode.ADDTASK_TITLE_EMPTY.getMsg());
         }
 
+
+        //地址为空
+        if(address==null||address.equals("")){
+            return ServerResponse.createServerResponseByFail(ResponseCode.ADDTASK_AddRESS_EMPTY.getCode(),ResponseCode.ADDTASK_AddRESS_EMPTY.getMsg());
+        }else{
+            //        //中文地址转经纬度
+            System.out.println(address);
+            HashMap<String, String> hashMap = new HashMap<String,String>();
+            hashMap.put("address",address);
+            HashMap<String,Object> hashMap1=getGeo(HttpClient.sendGetRequest(Const.GaoDeMapAPI,hashMap));
+            task.settJingdu(MathUtils.objectConvertBigDecimal(hashMap1.get("jingdu")));
+            task.settWeidu(MathUtils.objectConvertBigDecimal(hashMap1.get("weidu")));
+        }
+
+
+
         //数据库插入任务
         Integer result= taskMapper.insert(task);
-
         //插入失败
         if(result==0){
             return ServerResponse.createServerResponseByFail(ResponseCode.ADDTASK_FAILED.getCode(),ResponseCode.ADDTASK_FAILED.getMsg());
@@ -79,7 +101,7 @@ public class TaskServiceImpl implements TaskService {
         return ServerResponse.createServerResponseByFail(ResponseCode.RECEIVETASK_FAILED.getCode(),ResponseCode.RECEIVETASK_FAILED.getMsg());
     }
 
-    //查看用户全部任务
+    //查看与用户有关的全部任务
     @Override
     public ServerResponse allTask(User user) {
 
@@ -92,5 +114,21 @@ public class TaskServiceImpl implements TaskService {
             return ServerResponse.createServerResponseByFail(ResponseCode.ALLTASK_FAILED.getCode(),ResponseCode.ALLTASK_FAILED.getMsg());
         }
         return ServerResponse.createServerResponseBySuccess(list);
+    }
+
+    public HashMap<String,Object> getGeo(String addressJSON){
+        HashMap<String,Object> hashMap=new HashMap<String,Object>();
+
+        //高德API返回的字符串转json对象
+        JSONObject data0= JSONObject.parseObject(addressJSON);
+        //json对象找出geocodes数组
+        JSONArray data1=JSONObject.parseArray(data0.getString("geocodes"));
+        //从geocodes数组抽取location
+        JSONObject data3=JSONObject.parseObject(data1.get(0).toString());
+
+        String [] GeoArray=data3.getString("location").split(",");
+        hashMap.put("jingdu",GeoArray[0]);
+        hashMap.put("weidu",GeoArray[1]);
+        return hashMap;
     }
 }

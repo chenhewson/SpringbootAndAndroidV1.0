@@ -35,6 +35,8 @@ public enum ResponseCode {
     ALLTASK_USERID_EMPTY(21,"UserID为空！"),
     ALLTASK_FAILED(22,"查询失败！"),
     ALLTASK_SUCCESS(23,"查询成功！"),
+
+    ADDTASK_AddRESS_EMPTY(24,"目的地为空！"),
     ;
     private int code;
     private String msg;

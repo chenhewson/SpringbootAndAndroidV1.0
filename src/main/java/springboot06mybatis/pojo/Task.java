@@ -48,7 +48,7 @@ public class Task implements Serializable {
      *
      * @mbg.generated
      */
-    private Double tMoney=new Double(0.0);
+    private Double tMoney;
 
     /**
      *

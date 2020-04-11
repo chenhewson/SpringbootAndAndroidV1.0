@@ -55,4 +55,6 @@ server:
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml #mybatis配置文件路径
   mapper-locations: classpath:mybatis/mapper/*.xml #mybatis映射文件路径
+#  configuration:
+#    map-underscore-to-camel-case: false
 
