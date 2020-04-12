@@ -268,4 +268,8 @@
   <select id="AllList" resultMap="ResultMapWithBLOBs">
     select * from t_task where FinisherId=#{userid} or PublishUserId=#{userid}
   </select>
+
+  <select id="homeList" resultMap="ResultMapWithBLOBs">
+    select * from t_task where T_isNew='1'
+  </select>
 </mapper>

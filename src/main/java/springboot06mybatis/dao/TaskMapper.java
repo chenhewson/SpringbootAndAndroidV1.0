@@ -63,4 +63,6 @@ public interface TaskMapper {
 
     //自定义部分
     List<Task> AllList(Integer userid);
+
+    List<Task> homeList();
 }

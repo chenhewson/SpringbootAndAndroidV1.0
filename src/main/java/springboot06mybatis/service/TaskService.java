@@ -20,4 +20,6 @@ public interface TaskService {
     ServerResponse receiveTask(Task task);
 
     ServerResponse allTask(User user);
+
+    ServerResponse homeTask(String jingdu, String weidu);
 }

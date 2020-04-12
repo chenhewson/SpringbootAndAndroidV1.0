@@ -10,14 +10,13 @@ import springboot06mybatis.dao.TaskMapper;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.TaskService;
+import springboot06mybatis.utils.DistanceUtil;
 import springboot06mybatis.utils.HttpClient;
 import springboot06mybatis.utils.MathUtils;
 import springboot06mybatis.utils.ServerResponse;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * ClassName:    TaskServiceImpl
@@ -114,6 +113,31 @@ public class TaskServiceImpl implements TaskService {
             return ServerResponse.createServerResponseByFail(ResponseCode.ALLTASK_FAILED.getCode(),ResponseCode.ALLTASK_FAILED.getMsg());
         }
         return ServerResponse.createServerResponseBySuccess(list);
+    }
+
+    @Override
+    public ServerResponse homeTask(String jingduFrom, String weiduFrom) {
+        Map<Double, Task> treemap = new TreeMap<Double, Task>();
+        if(jingduFrom==null||jingduFrom.equals("")||weiduFrom==null||weiduFrom.equals("")){
+            return ServerResponse.createServerResponseByFail(ResponseCode.MYLOCATION_EMPTY.getCode(),ResponseCode.MYLOCATION_EMPTY.getMsg());
+        }
+        List<Task> list=taskMapper.homeList();
+        if(list.isEmpty()){
+            return ServerResponse.createServerResponseByFail(ResponseCode.ALLTASK_FAILED.getCode(),ResponseCode.ALLTASK_FAILED.getMsg());
+        }else{
+            for (Task item:list){
+                Double longitudeFrom=Double.valueOf(jingduFrom);
+                Double latitudeFrom=Double.valueOf(weiduFrom);
+                Double longitudeTo=item.gettJingdu().doubleValue();
+                Double latitudeTo=item.gettWeidu().doubleValue();
+                Double distance=DistanceUtil.getDistance(longitudeFrom,latitudeFrom,longitudeTo,latitudeTo);
+                System.out.println(distance);
+
+                //存到treemap中，便于排序
+                treemap.put(distance,item);
+            }
+        }
+        return ServerResponse.createServerResponseBySuccess(treemap);
     }
 
     public HashMap<String,Object> getGeo(String addressJSON){

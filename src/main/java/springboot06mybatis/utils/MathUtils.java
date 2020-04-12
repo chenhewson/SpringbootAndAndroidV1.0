@@ -6,7 +6,7 @@ import java.math.BigInteger;
 /**
  * ClassName:    MathUtils
  * Package:    springboot06mybatis.utils
- * Description:
+ * Description:object类型转BigDecimal
  * Datetime:    2020/4/11   23:11
  * Author:   hewson.chen@foxmail.com
  */

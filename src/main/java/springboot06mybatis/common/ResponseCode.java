@@ -37,6 +37,8 @@ public enum ResponseCode {
     ALLTASK_SUCCESS(23,"查询成功！"),
 
     ADDTASK_AddRESS_EMPTY(24,"目的地为空！"),
+
+    MYLOCATION_EMPTY(25,"经纬度信息为空！"),
     ;
     private int code;
     private String msg;

@@ -83,4 +83,15 @@ public class TaskController {
         logger.info(String.valueOf(user.getUserid()));
         return taskService.allTask(user);
     }
+
+    /*首页所有任务的展示
+    * 输入：当前用户所在经纬度
+    * 输出：附近任务列表，按距离排序*/
+    @ResponseBody
+    @RequestMapping("/Task/homeTask.do")
+    //查看全部任务
+    public ServerResponse hometask(@Param("jingdu")String jingdu,@Param("weidu") String weidu) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+//        logger.info(String.valueOf(user.getUserid()));
+        return taskService.homeTask(jingdu,weidu);
+    }
 }
