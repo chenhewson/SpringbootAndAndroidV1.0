@@ -47,23 +47,22 @@ public class TaskController {
     @ResponseBody
     @RequestMapping("/Task/addTask.do")
     //新增任务
-    public ServerResponse addtask( Task task,@Param("address") String address) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-        logger.info(String.valueOf(task.getPublishuserid()));
+    public ServerResponse addtask( Task task) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+        logger.info(String.valueOf(task.getPublishuserid())+task.gettAddress());
 //        DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        task.settCreatetime(new java.sql.Date(new java.util.Date().getTime()));
+        task.settAddress(String2utf_8.setString2utf_8(task.gettAddress()));
+        String address=task.gettAddress();
 
+        //设定默认值
+        task.settCreatetime(new java.sql.Date(new java.util.Date().getTime()));
+        task.settIsdone(false);
+        task.settIsnew(true);
+        task.settIsdestroy(false);
         //赏金若为空
         if(task.gettMoney()==null){
             task.settMoney(0.0);
         }
 
-//        //中文地址转经纬度
-//        System.out.println(address);
-//        HashMap<String, String> hashMapMap = new HashMap<String,String>();
-//        hashMapMap.put("address",address);
-//        String addressJSON=HttpClient.sendGetRequest(hashMapMap);
-//        System.out.println(addressJSON);
-//        JSONObject data0=JSONObject.parseObject(addressJSON);
         return taskService.addTask(task,address);
     }
 
