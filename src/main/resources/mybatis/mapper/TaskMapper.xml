@@ -248,4 +248,10 @@
   <select id="homeList" resultMap="BaseResultMap">
     select * from t_task where T_isNew='1'
   </select>
+
+  <select id="getTaskUsername" resultType="String">
+    select username from t_user where UserId=(
+        SELECT PublishUserId FROM t_task WHERE TaskId=#{taskId}
+    )
+  </select>
 </mapper>

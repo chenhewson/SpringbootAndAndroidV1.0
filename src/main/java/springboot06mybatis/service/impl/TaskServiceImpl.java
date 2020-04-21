@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import springboot06mybatis.common.Const;
 import springboot06mybatis.common.ResponseCode;
+import springboot06mybatis.dao.StarMapper;
 import springboot06mybatis.dao.TaskMapper;
+import springboot06mybatis.dao.UserMapper;
+import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.TaskService;
@@ -29,6 +32,10 @@ import java.util.*;
 public class TaskServiceImpl implements TaskService {
     @Autowired
     TaskMapper taskMapper;
+    @Autowired
+    UserMapper userMapper;
+    @Autowired
+    StarMapper starMapper;
     @Override
     public ServerResponse addTask(Task task,String address) {
         //发布者id为空
@@ -154,5 +161,60 @@ public class TaskServiceImpl implements TaskService {
         hashMap.put("jingdu",GeoArray[0]);
         hashMap.put("weidu",GeoArray[1]);
         return hashMap;
+    }
+
+    @Override
+    public ServerResponse getTaskUsername(Integer taskId) {
+        if(taskId==null||taskId<0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASKID_EMPTY.getCode(),ResponseCode.TASKID_EMPTY.getMsg());
+        }
+        String taskUserName=taskMapper.getTaskUsername(taskId);
+        return ServerResponse.createServerResponseBySuccess(taskUserName);
+    }
+
+    @Override
+    public ServerResponse addStar(Star star) {
+        if (star.gettUserid().length()==0||star.gettUserid()==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.ALLTASK_USERID_EMPTY.getCode(),ResponseCode.ALLTASK_USERID_EMPTY.getMsg());
+        }else {
+            //查询用户名是否存在
+            User user=userMapper.selectByPrimaryKey(Integer.valueOf(star.gettUserid()));
+            if(user.getUserid()==null||user.getUserid()==0){
+                return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
+            }
+        }
+        if (star.gettTaskid().length()==0||star.gettTaskid()==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASKID_EMPTY.getCode(),ResponseCode.TASKID_EMPTY.getMsg());
+        }else {
+            Task task=taskMapper.selectByPrimaryKey(Integer.valueOf(star.gettTaskid()));
+            if(task.getTaskid()==null||task.getTaskid()==0){
+                return ServerResponse.createServerResponseByFail(ResponseCode.TASKID_NOT_EXIST.getCode(),ResponseCode.TASKID_NOT_EXIST.getMsg());
+            }
+        }
+        starMapper.insert(star);
+        return ServerResponse.createServerResponseBySuccess("已加入心愿单！");
+    }
+
+    @Override
+    public ServerResponse starExistTask(Star star) {
+        Integer starid=starMapper.selectByUseridAndTaskid(star);
+        if (starid==null||starid==0){
+            //心愿清单不存在该项，允许加入清单。code=1
+            starMapper.insert(star);
+            return ServerResponse.createServerResponseBySuccess(0,"心愿清单不存在该项，现已加入该项目");
+        }
+        starMapper.deleteByPrimaryKey(starid);
+        return ServerResponse.createServerResponseBySuccess(1,"心愿清单已经存在该项，现已移除该项目");
+    }
+
+    @Override
+    public ServerResponse StarExist(Star star) {
+        Integer starid=starMapper.selectByUseridAndTaskid(star);
+        if (starid==null||starid==0){
+            //心愿清单不存在该项
+            return ServerResponse.createServerResponseBySuccess(0,"心愿清单不存在该项，设置为空红心");
+        }
+        //心愿清单已经存在该项
+        return ServerResponse.createServerResponseBySuccess(1,"心愿清单已经存在该项，设置为实红心");
     }
 }

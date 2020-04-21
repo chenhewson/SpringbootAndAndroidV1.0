@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import springboot06mybatis.common.Const;
+import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.TaskService;
@@ -90,7 +91,29 @@ public class TaskController {
     @RequestMapping("/Task/homeTask.do")
     //查看全部任务
     public ServerResponse hometask(@Param("jingdu")String jingdu,@Param("weidu") String weidu) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-//        logger.info(String.valueOf(user.getUserid()));
+        logger.info("经纬度："+jingdu+"+"+weidu);
         return taskService.homeTask(jingdu,weidu);
+    }
+
+    @ResponseBody
+    @RequestMapping("/Task/getUsername.do")
+    public ServerResponse getusername(@Param("taskId")Integer taskId){
+        return taskService.getTaskUsername(taskId);
+    }
+
+    //
+    @ResponseBody
+    @RequestMapping("/Task/StarExist.do")
+    public ServerResponse StarExist(Star star){
+        logger.info(star+"");
+        return taskService.StarExist(star);
+    }
+
+    //实现点击红心的相关逻辑
+    @ResponseBody
+    @RequestMapping("/Task/starExistTask.do")
+    public ServerResponse starExist(Star star){
+        logger.info(star+"");
+        return taskService.starExistTask(star);
     }
 }

@@ -1,6 +1,7 @@
 package springboot06mybatis.dao;
 
 import springboot06mybatis.pojo.Star;
+import springboot06mybatis.utils.ServerResponse;
 
 public interface StarMapper {
     /**
@@ -50,4 +51,7 @@ public interface StarMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Star record);
+
+
+    Integer selectByUseridAndTaskid(Star star);
 }

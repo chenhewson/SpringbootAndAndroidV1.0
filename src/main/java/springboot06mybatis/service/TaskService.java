@@ -2,6 +2,7 @@ package springboot06mybatis.service;
 
 
 import org.springframework.stereotype.Service;
+import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.utils.ServerResponse;
@@ -22,4 +23,12 @@ public interface TaskService {
     ServerResponse allTask(User user);
 
     ServerResponse homeTask(String jingdu, String weidu);
+
+    ServerResponse getTaskUsername(Integer taskId);
+
+    ServerResponse addStar(Star star);
+
+    ServerResponse starExistTask(Star star);
+
+    ServerResponse StarExist(Star star);
 }

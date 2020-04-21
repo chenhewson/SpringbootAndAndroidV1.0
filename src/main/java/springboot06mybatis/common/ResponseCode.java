@@ -39,6 +39,9 @@ public enum ResponseCode {
     ADDTASK_AddRESS_EMPTY(24,"目的地为空！"),
 
     MYLOCATION_EMPTY(25,"经纬度信息为空！"),
+
+    TASKID_EMPTY(26,"任务id为空！"),
+    TASKID_NOT_EXIST(27,"任务不存在！"),
     ;
     private int code;
     private String msg;

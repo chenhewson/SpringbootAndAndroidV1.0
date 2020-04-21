@@ -100,4 +100,11 @@
       T_TaskId = #{tTaskid,jdbcType=VARCHAR}
     where StarId = #{starid,jdbcType=INTEGER}
   </update>
+
+<!--  自定义部分-->
+  <select id="selectByUseridAndTaskid" parameterType="springboot06mybatis.pojo.Star" resultType="Integer">
+    select starid
+    from t_star
+    where T_UserId=#{tUserid} and T_TaskId=#{tTaskid}
+  </select>
 </mapper>
