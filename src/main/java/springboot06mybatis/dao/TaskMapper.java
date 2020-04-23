@@ -59,4 +59,10 @@ public interface TaskMapper {
     List<Task> homeList();
 
     String getTaskUsername(Integer taskId);
+
+    List<Task> selectByfinisherid(String finisherid);
+
+    List<Task> selectByPublished(String publishid);
+
+    List<Task> myStarList(String userid);
 }

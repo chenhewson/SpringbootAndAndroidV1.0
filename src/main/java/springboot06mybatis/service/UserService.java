@@ -19,4 +19,6 @@ public interface UserService {
     ServerResponse loginLogic(String username, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException;
 
     ServerResponse registerLogic(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException;
+
+    ServerResponse getUserInfo(Integer userid);
 }

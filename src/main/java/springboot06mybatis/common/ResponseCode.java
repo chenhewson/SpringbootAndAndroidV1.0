@@ -42,6 +42,12 @@ public enum ResponseCode {
 
     TASKID_EMPTY(26,"任务id为空！"),
     TASKID_NOT_EXIST(27,"任务不存在！"),
+    NO_SHOULD_DONE(28,"没有存在未完成的任务！"),
+    NO_PUBLISHED_DONE(29,"从未发布过任务！"),
+    STAR_LIST_EMPTY(30,"愿望清单为空！"),
+    TASK_IS_DONE(31,"任务已完成，请勿重复点击！"),
+    TASK_DONE(32,"已完成！待发布者确认后即可得到赏金！"),
+    TASK_DESTROY(33,"已经打赏过了！"),
     ;
     private int code;
     private String msg;

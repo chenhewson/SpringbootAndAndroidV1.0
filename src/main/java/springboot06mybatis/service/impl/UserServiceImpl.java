@@ -95,4 +95,10 @@ public class UserServiceImpl implements UserService {
         }
         return ServerResponse.createServerResponseBySuccess(ResponseCode.REGISTER_SUCCESS.getCode(),ResponseCode.REGISTER_SUCCESS.getMsg());
     }
+
+    @Override
+    public ServerResponse getUserInfo(Integer userid) {
+        User user=userMapper.selectByPrimaryKey(userid);
+        return ServerResponse.createServerResponseBySuccess(user);
+    }
 }

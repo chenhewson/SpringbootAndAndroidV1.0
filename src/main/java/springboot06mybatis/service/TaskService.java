@@ -31,4 +31,14 @@ public interface TaskService {
     ServerResponse starExistTask(Star star);
 
     ServerResponse StarExist(Star star);
+
+    ServerResponse shouldBeDone(String finisherid);
+
+    ServerResponse myPublished(String publishid);
+
+    ServerResponse myStarList(String userid);
+
+    ServerResponse isDone(String taskid);
+
+    ServerResponse ConfirmDone(String taskid);
 }

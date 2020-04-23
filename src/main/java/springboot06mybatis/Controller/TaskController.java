@@ -116,4 +116,42 @@ public class TaskController {
         logger.info(star+"");
         return taskService.starExistTask(star);
     }
+
+    //查看我作为finisherid的所有订单
+    @ResponseBody
+    @RequestMapping("/Task/ShouldBeDone.do")
+    public ServerResponse shouldBeDone(@Param("finisherid")String finisherid){
+        return taskService.shouldBeDone(finisherid);
+    }
+
+    //查看我发布的所有订单
+    @ResponseBody
+    @RequestMapping("/Task/MyPublished.do")
+    public ServerResponse myPublished(@Param("publishid")String publishid){
+        return taskService.myPublished(publishid);
+    }
+
+    //查看我的感兴趣清单
+    @ResponseBody
+    @RequestMapping("/Task/MyStar.do")
+    public ServerResponse myStarList(@Param("userid")String userid){
+        System.out.println(userid);
+        return taskService.myStarList(userid);
+    }
+
+    //任务接受方确认完成任务
+    @ResponseBody
+    @RequestMapping("/Task/isDone.do")
+    public ServerResponse isDone(@Param("taskid")String taskid){
+        System.out.println("taskid"+taskid);
+        return taskService.isDone(taskid);
+    }
+
+    //任务发布者确认完成任务并打赏
+    @ResponseBody
+    @RequestMapping("/Task/ConfirmDone.do")
+    public ServerResponse ConfirmDone(@Param("taskid")String taskid){
+        System.out.println("ConfirmDone,taskid="+taskid);
+        return taskService.ConfirmDone(taskid);
+    }
 }

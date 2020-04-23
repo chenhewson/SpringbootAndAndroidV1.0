@@ -1,6 +1,7 @@
 package springboot06mybatis.Controller;
 
 
+import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +45,11 @@ public class UserController {
     public ServerResponse register(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         user.settBalance(0.0);
         return userServices.registerLogic(user);
+    }
+
+    @RequestMapping("/user/getUserinfo.do")
+    public ServerResponse getUserInfo(@Param("userid")Integer userid){
+        return userServices.getUserInfo(userid);
     }
 
 }

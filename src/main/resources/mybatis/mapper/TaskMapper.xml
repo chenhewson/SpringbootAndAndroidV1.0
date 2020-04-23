@@ -254,4 +254,16 @@
         SELECT PublishUserId FROM t_task WHERE TaskId=#{taskId}
     )
   </select>
+
+  <select id="selectByfinisherid" resultMap="BaseResultMap">
+    select * from t_task where FinisherId=#{finisherid}
+  </select>
+
+  <select id="selectByPublished" resultMap="BaseResultMap">
+    select * from t_task where PublishUserId=#{publishid}
+  </select>
+
+  <select id="myStarList" resultMap="BaseResultMap">
+  select * from t_task t,t_star s where t.TaskId=s.T_TaskId and s.T_UserId=${userid}
+  </select>
 </mapper>

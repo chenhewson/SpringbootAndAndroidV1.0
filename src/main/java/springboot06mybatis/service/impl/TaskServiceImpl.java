@@ -217,4 +217,79 @@ public class TaskServiceImpl implements TaskService {
         //心愿清单已经存在该项
         return ServerResponse.createServerResponseBySuccess(1,"心愿清单已经存在该项，设置为实红心");
     }
+
+    @Override
+    public ServerResponse shouldBeDone(String finisherid) {
+        List<Task> list=taskMapper.selectByfinisherid(finisherid);
+        if (list.size()!=0){
+            return ServerResponse.createServerResponseBySuccess(list);
+        }else {
+            return ServerResponse.createServerResponseByFail(ResponseCode.NO_SHOULD_DONE.getCode(),ResponseCode.NO_SHOULD_DONE.getMsg());
+        }
+    }
+
+    @Override
+    public ServerResponse myPublished(String publishid) {
+        List<Task> list=taskMapper.selectByPublished(publishid);
+        if (list.size()!=0){
+            return ServerResponse.createServerResponseBySuccess(list);
+        }else {
+            return ServerResponse.createServerResponseByFail(ResponseCode.NO_PUBLISHED_DONE.getCode(),ResponseCode.NO_PUBLISHED_DONE.getMsg());
+        }
+    }
+
+    @Override
+    public ServerResponse myStarList(String userid) {
+        List<Task> list=taskMapper.myStarList(userid);
+        if (list.size()!=0){
+            return ServerResponse.createServerResponseBySuccess(list);
+        }else {
+            return ServerResponse.createServerResponseByFail(ResponseCode.STAR_LIST_EMPTY.getCode(),ResponseCode.STAR_LIST_EMPTY.getMsg());
+        }
+    }
+
+    //接受者完成任务
+    @Override
+    public ServerResponse isDone(String taskid) {
+        Task task=taskMapper.selectByPrimaryKey(Integer.valueOf(taskid));
+        if(task==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASKID_NOT_EXIST.getCode(),ResponseCode.TASKID_NOT_EXIST.getMsg());
+        }
+        if(task.gettIsdone()==true){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASK_IS_DONE.getCode(),ResponseCode.TASK_IS_DONE.getMsg());
+        }
+        task.settIsdone(true);
+        //Begintime表示任务接受者完成任务的时间
+        task.settBegintime(new java.sql.Date(new java.util.Date().getTime()));
+        taskMapper.updateByPrimaryKey(task);
+        return ServerResponse.createServerResponseBySuccess(ResponseCode.TASK_DONE.getCode(),ResponseCode.TASK_DONE.getMsg());
+    }
+
+    //发布者确认完成，并打赏
+    @Override
+    public ServerResponse ConfirmDone(String taskid) {
+        Task task=taskMapper.selectByPrimaryKey(Integer.valueOf(taskid));
+        if(task==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASKID_NOT_EXIST.getCode(),ResponseCode.TASKID_NOT_EXIST.getMsg());
+        }
+        if(task.gettIsdestroy()){
+            return ServerResponse.createServerResponseByFail(ResponseCode.TASK_DESTROY.getCode(),ResponseCode.TASK_DESTROY.getMsg());
+        }
+        //Finishtime表示任务发布者完成确认对方完成，并打赏的时间
+        task.settFinishtime(new java.sql.Date(new java.util.Date().getTime()));
+
+        //标记为双方确认完成
+        task.settIsdestroy(true);
+
+        //更新task
+        taskMapper.updateByPrimaryKey(task);
+
+        //更新完成者的账户余额
+        User user=userMapper.selectByPrimaryKey(Integer.valueOf(task.getFinisherid()));
+        user.settBalance(user.gettBalance()+task.gettMoney());
+
+        //数据库更新完成者信息
+        userMapper.updateByPrimaryKey(user);
+        return ServerResponse.createServerResponseBySuccess(user,"确认完成！赏金已打入对方账户！");
+    }
 }
