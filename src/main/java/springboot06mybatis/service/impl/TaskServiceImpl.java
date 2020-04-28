@@ -4,20 +4,25 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import springboot06mybatis.common.Const;
 import springboot06mybatis.common.ResponseCode;
 import springboot06mybatis.dao.StarMapper;
+import springboot06mybatis.dao.TaskIMGMapper;
 import springboot06mybatis.dao.TaskMapper;
 import springboot06mybatis.dao.UserMapper;
 import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
+import springboot06mybatis.pojo.TaskIMG;
 import springboot06mybatis.pojo.User;
+import springboot06mybatis.service.QiniuService;
 import springboot06mybatis.service.TaskService;
 import springboot06mybatis.utils.DistanceUtil;
 import springboot06mybatis.utils.HttpClient;
 import springboot06mybatis.utils.MathUtils;
 import springboot06mybatis.utils.ServerResponse;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 
@@ -36,6 +41,10 @@ public class TaskServiceImpl implements TaskService {
     UserMapper userMapper;
     @Autowired
     StarMapper starMapper;
+    @Autowired
+    QiniuService qiniuService;
+    @Autowired
+    TaskIMGMapper taskIMGMapper;
     @Override
     public ServerResponse addTask(Task task,String address) {
         //发布者id为空
@@ -291,5 +300,38 @@ public class TaskServiceImpl implements TaskService {
         //数据库更新完成者信息
         userMapper.updateByPrimaryKey(user);
         return ServerResponse.createServerResponseBySuccess(user,"确认完成！赏金已打入对方账户！");
+    }
+
+    //上传任务图片
+
+    @Override
+    public ServerResponse imageUpload(MultipartFile file_pi) {
+        if(file_pi==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.IMAGE_EMPTY.getCode(),ResponseCode.IMAGE_EMPTY.getMsg());
+        }
+        String image_url=null;
+        try {
+            image_url=qiniuService.saveImage(file_pi);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (image_url!=null&&image_url.length()!=0){
+            //七牛云回调成功
+            TaskIMG taskIMG=new TaskIMG();
+            taskIMG.settImgurl(image_url);
+
+            //图片地址存入数据库
+            taskIMGMapper.insert(taskIMG);
+
+            return ServerResponse.createServerResponseBySuccess(ResponseCode.IMAGE_UPLOAD_OK.getCode(),ResponseCode.IMAGE_UPLOAD_OK.getMsg());
+        }else {
+            return ServerResponse.createServerResponseByFail(ResponseCode.IMAGE_EMPTY.getCode(),ResponseCode.IMAGE_EMPTY.getMsg());
+        }
+    }
+
+    @Override
+    public ServerResponse getTocken() {
+        String tocken=qiniuService.getUpToken();
+        return ServerResponse.createServerResponseBySuccess(tocken);
     }
 }

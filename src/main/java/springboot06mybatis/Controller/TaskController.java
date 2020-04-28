@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import springboot06mybatis.common.Const;
 import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
@@ -154,4 +155,22 @@ public class TaskController {
         System.out.println("ConfirmDone,taskid="+taskid);
         return taskService.ConfirmDone(taskid);
     }
+
+    //上传任务图片
+    @ResponseBody
+    @RequestMapping("/Task/imageUpload.do")
+    public ServerResponse imageUpload(@Param("taskpic") MultipartFile file_pi,@Param("type") String type){
+        System.out.println(type);
+        System.out.println("file_pi"+file_pi);
+        return taskService.imageUpload(file_pi);
+    }
+
+    //获取七牛云tocken
+    @ResponseBody
+    @RequestMapping("/Task/getTocken.do")
+    public ServerResponse getTocken(){
+        return taskService.getTocken();
+    }
+
+
 }

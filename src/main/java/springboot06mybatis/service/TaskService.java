@@ -2,6 +2,7 @@ package springboot06mybatis.service;
 
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import springboot06mybatis.pojo.Star;
 import springboot06mybatis.pojo.Task;
 import springboot06mybatis.pojo.User;
@@ -41,4 +42,8 @@ public interface TaskService {
     ServerResponse isDone(String taskid);
 
     ServerResponse ConfirmDone(String taskid);
+
+    ServerResponse imageUpload(MultipartFile file_pi);
+
+    ServerResponse getTocken();
 }

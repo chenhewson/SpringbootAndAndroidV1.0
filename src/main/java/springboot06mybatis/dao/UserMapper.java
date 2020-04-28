@@ -58,4 +58,5 @@ public interface UserMapper {
     User findByUsernameAndPassword(@Param("username")String username, @Param("password") String password);
 
     Integer findByEmail(String email);
+
 }

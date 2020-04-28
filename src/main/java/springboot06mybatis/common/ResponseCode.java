@@ -48,6 +48,12 @@ public enum ResponseCode {
     TASK_IS_DONE(31,"任务已完成，请勿重复点击！"),
     TASK_DONE(32,"已完成！待发布者确认后即可得到赏金！"),
     TASK_DESTROY(33,"已经打赏过了！"),
+
+    AVATAT_UPLOAD_OK(34,"头像上传成功！"),
+
+    IMAGE_EMPTY(35,"图片资源为空！"),
+    IMAGE_UPLOAD_OK(36,"图片上传成功！"),
+    IMAGE_UPLOAD_FAIL(37,"图片上传失败！"),
     ;
     private int code;
     private String msg;

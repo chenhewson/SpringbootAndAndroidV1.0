@@ -52,4 +52,10 @@ public class UserController {
         return userServices.getUserInfo(userid);
     }
 
+    //上传头像
+    @RequestMapping("/user/uploadAvatar.do")
+    public ServerResponse uploadAvatar(@Param("userid") String userid,@Param("filename") String filename){
+        System.out.println("上传头像"+userid+filename);
+        return userServices.uploadAvatar(userid,filename);
+    }
 }

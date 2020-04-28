@@ -21,4 +21,6 @@ public interface UserService {
     ServerResponse registerLogic(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException;
 
     ServerResponse getUserInfo(Integer userid);
+
+    ServerResponse uploadAvatar( String userid,String filename);
 }

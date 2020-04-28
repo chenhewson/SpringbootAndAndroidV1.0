@@ -101,4 +101,19 @@ public class UserServiceImpl implements UserService {
         User user=userMapper.selectByPrimaryKey(userid);
         return ServerResponse.createServerResponseBySuccess(user);
     }
+
+    //上传用户头像
+    @Override
+    public ServerResponse uploadAvatar(String userid,String filename) {
+        if((userid==null&&userid.length()==0)||(filename==null&&filename.length()==0)){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
+        }
+        User user=userMapper.selectByPrimaryKey(Integer.valueOf(userid));
+        if(user==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
+        }
+        user.settAvator(filename);
+        userMapper.updateByPrimaryKey(user);
+        return ServerResponse.createServerResponseBySuccess(ResponseCode.AVATAT_UPLOAD_OK.getCode(),ResponseCode.AVATAT_UPLOAD_OK.getMsg());
+    }
 }
