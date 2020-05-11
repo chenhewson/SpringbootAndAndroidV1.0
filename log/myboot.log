@@ -161,3 +161,109 @@ java.lang.NullPointerException: null
 2020-05-11 15:05:48.819  INFO 9200 --- [http-nio-8080-exec-8] s.Controller.UserController              : 经纬度：118.08573+24.62394
 2020-05-11 15:06:56.925  INFO 9200 --- [http-nio-8080-exec-10] s.Controller.UserController              : 41厦门市集美区厦门理工学院图书馆-西门
 2020-05-11 15:06:59.537  INFO 9200 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 20:30:35.207  INFO 9200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-11 20:30:35.214  INFO 9200 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-11 20:30:35.305  INFO 9200 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-11 21:37:48.734  INFO 12996 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 12996 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-11 21:37:48.772  INFO 12996 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-11 21:37:51.561  INFO 12996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-11 21:37:51.603  INFO 12996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-11 21:37:51.604  INFO 12996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-11 21:37:51.852  INFO 12996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-11 21:37:52.083  INFO 12996 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-11 21:37:56.071  INFO 12996 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-11 21:37:57.079  INFO 12996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-11 21:37:57.552  INFO 12996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-11 21:37:57.563  INFO 12996 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 10.54 seconds (JVM running for 13.776)
+2020-05-11 21:38:46.559  INFO 12996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-11 21:38:46.615  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : c
+2020-05-11 21:38:46.616  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
+2020-05-11 21:38:48.414  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 21:39:09.704  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : Star [Hash = 611077953, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:19:53.435  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : c
+2020-05-11 22:19:53.446  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
+2020-05-11 22:19:56.995  INFO 12996 --- [http-nio-8080-exec-8] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:20:04.219  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : Star [Hash = 1099366718, starid=null, tUserid=41, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:20:10.895  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : Star [Hash = 64201198, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:16.140  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : Star [Hash = 2128134702, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:18.689  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : Star [Hash = 1859169226, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:22.977  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : Star [Hash = 509724983, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:31.637  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : Star [Hash = 1266641486, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:34.265  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : Star [Hash = 279513802, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:39.376  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:20:46.482  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : Star [Hash = 462448595, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:20:51.231  INFO 12996 --- [http-nio-8080-exec-8] s.Controller.UserController              : Star [Hash = 475046479, starid=null, tUserid=41, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:33:23.391  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : c
+2020-05-11 22:33:23.391  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
+2020-05-11 22:33:26.552  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:33:33.670  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : Star [Hash = 1521315304, starid=null, tUserid=41, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:33:34.001 ERROR 12996 --- [http-nio-8080-exec-6] c.alibaba.druid.filter.stat.StatFilter   : slow sql 297 millis. select username from t_user where UserId=(
+        SELECT PublishUserId FROM t_task WHERE TaskId=?
+    )[68]
+2020-05-11 22:33:41.651  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : Star [Hash = 1069117901, starid=null, tUserid=41, tTaskid=70, serialVersionUID=1]
+2020-05-11 22:33:54.123  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : Star [Hash = 208482534, starid=null, tUserid=41, tTaskid=70, serialVersionUID=1]
+2020-05-11 22:33:59.780  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:34:03.498  INFO 12996 --- [http-nio-8080-exec-8] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:34:07.484  INFO 12996 --- [http-nio-8080-exec-9] s.Controller.UserController              : Star [Hash = 1640272676, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:34:10.102  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : 69
+2020-05-11 22:34:10.102  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : 41
+2020-05-11 22:34:13.425  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:35:58.464  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : c
+2020-05-11 22:35:58.465  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
+2020-05-11 22:35:59.875  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:36:10.948  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : Star [Hash = 1122355857, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:36:25.602  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : c
+2020-05-11 22:36:25.602  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
+2020-05-11 22:36:26.102  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:36:32.000  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : Star [Hash = 1021937453, starid=null, tUserid=41, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:36:38.980  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:36:47.572  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:36:58.673  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : b
+2020-05-11 22:36:58.674  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : kutf/uauL+w61xx3dTFXjw==
+2020-05-11 22:36:59.044  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:37:05.078  INFO 12996 --- [http-nio-8080-exec-9] s.Controller.UserController              : Star [Hash = 1038571476, starid=null, tUserid=40, tTaskid=69, serialVersionUID=1]
+2020-05-11 22:37:14.453  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:37:21.323  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : a
+2020-05-11 22:37:21.324  INFO 12996 --- [http-nio-8080-exec-4] s.Controller.UserController              : DMF1ucDxtqgxw5niaXcmYQ==
+2020-05-11 22:38:04.641  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : a
+2020-05-11 22:38:04.641  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : 1B2M2Y8AsgTpgAmY7PhCfg==
+2020-05-11 22:38:06.671  INFO 12996 --- [http-nio-8080-exec-8] s.Controller.UserController              : a
+2020-05-11 22:38:06.671  INFO 12996 --- [http-nio-8080-exec-8] s.Controller.UserController              : DMF1ucDxtqgxw5niaXcmYQ==
+2020-05-11 22:38:08.078  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:38:16.765  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : Star [Hash = 2057538486, starid=null, tUserid=36, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:39:20.724  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : b
+2020-05-11 22:39:20.725  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : kutf/uauL+w61xx3dTFXjw==
+2020-05-11 22:39:21.384  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:39:25.773  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : Star [Hash = 325884992, starid=null, tUserid=40, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:39:28.375  INFO 12996 --- [http-nio-8080-exec-9] s.Controller.UserController              : 68
+2020-05-11 22:39:28.376  INFO 12996 --- [http-nio-8080-exec-9] s.Controller.UserController              : 40
+2020-05-11 22:39:30.455  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:39:35.701  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : Star [Hash = 289465495, starid=null, tUserid=40, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:40:37.004  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : a
+2020-05-11 22:40:37.004  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : DMF1ucDxtqgxw5niaXcmYQ==
+2020-05-11 22:40:37.058 ERROR 12996 --- [http-nio-8080-exec-10] c.a.druid.support.http.stat.WebAppStat   : sessionStatMap is full
+2020-05-11 22:40:38.588  INFO 12996 --- [http-nio-8080-exec-9] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:40:48.424  INFO 12996 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:40:58.008  INFO 12996 --- [http-nio-8080-exec-7] s.Controller.UserController              : Star [Hash = 1163423522, starid=null, tUserid=36, tTaskid=68, serialVersionUID=1]
+2020-05-11 22:41:02.350 ERROR 12996 --- [http-nio-8080-exec-8] c.alibaba.druid.filter.stat.StatFilter   : slow sql 205 millis. update t_task
+    set PublishUserId = ?,
+      FinisherId = ?,
+      T_Title = ?,
+      T_Money = ?,
+      T_Detail = ?,
+      T_Address = ?,
+      T_jingdu = ?,
+      T_weidu = ?,
+      T_isNew = ?,
+      T_isDone = ?,
+      T_isDestroy = ?,
+      T_CreateTime = ?,
+      T_BeginTime = ?,
+      T_FinishTime = ?
+    where TaskId = ?["36","40","打卡",1.0,"操场打卡","厦门市集美区厦门理工学院(集美校区)",118.087906000000000,24.625044000000000,false,true,true,"2020-05-10 19:52:22","2020-05-11 22:39:39","2020-05-11 22:41:02",68]
+2020-05-11 22:41:04.293  INFO 12996 --- [http-nio-8080-exec-10] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:41:09.097  INFO 12996 --- [http-nio-8080-exec-3] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:41:21.591  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : b
+2020-05-11 22:41:21.592  INFO 12996 --- [http-nio-8080-exec-5] s.Controller.UserController              : kutf/uauL+w61xx3dTFXjw==
+2020-05-11 22:41:22.008  INFO 12996 --- [http-nio-8080-exec-6] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-11 22:41:46.664  INFO 12996 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.08573+24.62394
