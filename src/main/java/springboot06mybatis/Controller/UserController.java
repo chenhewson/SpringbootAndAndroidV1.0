@@ -58,4 +58,11 @@ public class UserController {
         System.out.println("上传头像"+userid+filename);
         return userServices.uploadAvatar(userid,filename);
     }
+
+    //修改个人信息
+    @RequestMapping("/user/updateMyInfo.do")
+    public ServerResponse updateMyInfo(@Param("userid") String userid,@Param("tell") String tell,@Param("email") String email){
+        System.out.println("修改个人信息"+tell+email);
+        return userServices.updateMyInfo(userid,tell,email);
+    }
 }

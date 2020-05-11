@@ -54,6 +54,8 @@ public enum ResponseCode {
     IMAGE_EMPTY(35,"图片资源为空！"),
     IMAGE_UPLOAD_OK(36,"图片上传成功！"),
     IMAGE_UPLOAD_FAIL(37,"图片上传失败！"),
+
+    INFO_UPDATE_OK(38,"修改信息成功！"),
     ;
     private int code;
     private String msg;

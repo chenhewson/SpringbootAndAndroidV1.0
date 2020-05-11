@@ -23,4 +23,6 @@ public interface UserService {
     ServerResponse getUserInfo(Integer userid);
 
     ServerResponse uploadAvatar( String userid,String filename);
+
+    ServerResponse updateMyInfo(String userid,String tell, String email);
 }

@@ -116,4 +116,20 @@ public class UserServiceImpl implements UserService {
         userMapper.updateByPrimaryKey(user);
         return ServerResponse.createServerResponseBySuccess(ResponseCode.AVATAT_UPLOAD_OK.getCode(),ResponseCode.AVATAT_UPLOAD_OK.getMsg());
     }
+
+    //修改个人信息
+    @Override
+    public ServerResponse updateMyInfo(String userid,String tell, String email) {
+        if(userid==null&&userid.length()==0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
+        }
+        User user=userMapper.selectByPrimaryKey(Integer.valueOf(userid));
+        if(user==null){
+            return ServerResponse.createServerResponseByFail(ResponseCode.USERNAME_NOT_EXIST.getCode(),ResponseCode.USERNAME_NOT_EXIST.getMsg());
+        }
+        user.settTell(tell);
+        user.settEmail(email);
+        userMapper.updateByPrimaryKey(user);
+        return ServerResponse.createServerResponseBySuccess(ResponseCode.INFO_UPDATE_OK.getCode(),ResponseCode.INFO_UPDATE_OK.getMsg());
+    }
 }
