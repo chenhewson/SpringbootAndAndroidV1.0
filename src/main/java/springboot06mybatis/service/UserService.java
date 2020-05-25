@@ -25,4 +25,6 @@ public interface UserService {
     ServerResponse uploadAvatar( String userid,String filename);
 
     ServerResponse updateMyInfo(String userid,String tell, String email);
+
+    ServerResponse sendEmail(String emailAddress, String emailCode);
 }

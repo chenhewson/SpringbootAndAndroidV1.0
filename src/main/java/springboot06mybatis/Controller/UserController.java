@@ -65,4 +65,12 @@ public class UserController {
         System.out.println("修改个人信息"+tell+email);
         return userServices.updateMyInfo(userid,tell,email);
     }
+
+    //发送验证码
+    @RequestMapping("/user/sendEmail.do")
+    public ServerResponse sendEmail(@Param("emailAddress") String emailAddress,@Param("emailCode") String emailCode){
+        System.out.println("验证码"+emailCode);
+        System.out.println("邮箱"+emailAddress);
+        return userServices.sendEmail(emailAddress,emailCode);
+    }
 }

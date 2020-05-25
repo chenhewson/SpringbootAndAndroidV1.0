@@ -11,6 +11,7 @@ import springboot06mybatis.dao.UserMapper;
 import springboot06mybatis.pojo.User;
 import springboot06mybatis.service.UserService;
 import springboot06mybatis.utils.MD5Utils;
+import springboot06mybatis.utils.SendEmail;
 import springboot06mybatis.utils.ServerResponse;
 import springboot06mybatis.utils.String2utf_8;
 
@@ -131,5 +132,24 @@ public class UserServiceImpl implements UserService {
         user.settEmail(email);
         userMapper.updateByPrimaryKey(user);
         return ServerResponse.createServerResponseBySuccess(ResponseCode.INFO_UPDATE_OK.getCode(),ResponseCode.INFO_UPDATE_OK.getMsg());
+    }
+
+    @Override
+    public ServerResponse sendEmail(String emailAddress, String emailCode) {
+        if(emailAddress==null&&emailAddress.length()==0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.EMAIL_NOT_EMPTY.getCode(),ResponseCode.EMAIL_NOT_EMPTY.getMsg());
+        }
+        if(emailCode==null&&emailCode.length()==0){
+            return ServerResponse.createServerResponseByFail(ResponseCode.EMAIL_CODE_IS_EMPTY.getCode(),ResponseCode.EMAIL_CODE_IS_EMPTY.getMsg());
+        }
+        try {
+            SendEmail sm=new SendEmail();
+            sm.email(emailAddress, Integer.valueOf(emailCode));
+            return ServerResponse.createServerResponseBySuccess(ResponseCode.EMAIL_SEND_OK.getCode(),ResponseCode.EMAIL_SEND_OK.getMsg());
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            return ServerResponse.createServerResponseByFail(ResponseCode.EMAIL_SEND_FAILED.getCode(),ResponseCode.EMAIL_SEND_FAILED.getMsg());
+        }
     }
 }

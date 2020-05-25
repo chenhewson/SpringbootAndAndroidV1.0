@@ -9,6 +9,8 @@ package springboot06mybatis.common;
  */
 //枚举，设定状态码
 public enum ResponseCode {
+    //以下为枚举项，都是本类的实例
+    //不能使用new来创建枚举类的对象，在类外只能使用类名.枚举项
     USERNAME_NOT_EMPTY(1,"用户名不能空！"),
     PASSWORD_NOT_EMPTY(2,"密码不能空！"),
     USERNAME_NOT_EXIST(3,"用户名不存在！"),
@@ -56,6 +58,10 @@ public enum ResponseCode {
     IMAGE_UPLOAD_FAIL(37,"图片上传失败！"),
 
     INFO_UPDATE_OK(38,"修改信息成功！"),
+
+    EMAIL_CODE_IS_EMPTY(39,"邮箱验证码为空！"),
+    EMAIL_SEND_OK(40,"验证码发送成功！"),
+    EMAIL_SEND_FAILED(41,"验证码发送失败！"),
     ;
     private int code;
     private String msg;
