@@ -24,6 +24,7 @@ import springboot06mybatis.utils.ServerResponse;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.*;
 
 /**
@@ -141,6 +142,7 @@ public class TaskServiceImpl implements TaskService {
         if(list.isEmpty()){
             return ServerResponse.createServerResponseByFail(ResponseCode.ALLTASK_FAILED.getCode(),ResponseCode.ALLTASK_FAILED.getMsg());
         }else{
+            long startTime=System.nanoTime();   //获取开始时间   //获取开始时间
             for (Task item:list){
                 Double longitudeFrom=Double.valueOf(jingduFrom);
                 Double latitudeFrom=Double.valueOf(weiduFrom);
@@ -151,7 +153,27 @@ public class TaskServiceImpl implements TaskService {
 
                 //存到treemap中，便于排序
                 treemap.put(distance,item);
+
+//                list.sort(Comparator.comparing(o -> {
+//                    double longitudeFrom = Double.parseDouble(jingduFrom);
+//                    double latitudeFrom = Double.parseDouble(weiduFrom);
+//                    double longitudeTo = o.gettJingdu().doubleValue();
+//                    double latitudeTo = o.gettWeidu().doubleValue();
+//                    return DistanceUtil.getDistance(longitudeFrom, latitudeFrom, longitudeTo, latitudeTo);
+//                }));
+                
             }
+            //dehui写法,默认升序
+            list.sort(Comparator.comparing(o -> {
+                double longitudeFrom = Double.parseDouble(jingduFrom);
+                double latitudeFrom = Double.parseDouble(weiduFrom);
+                double longitudeTo = o.gettJingdu().doubleValue();
+                double latitudeTo = o.gettWeidu().doubleValue();
+                return DistanceUtil.getDistance(longitudeFrom, latitudeFrom, longitudeTo, latitudeTo);
+            }));
+            long endTime=System.nanoTime(); //获取结束时间 //获取结束时间
+            long diff=endTime-startTime;
+            System.out.println("程序运行时间： "+diff+"ns");
         }
         return ServerResponse.createServerResponseBySuccess(treemap);
     }

@@ -248,3 +248,169 @@ java.lang.ClassNotFoundException: com.sun.mail.util.MailLogger
 2020-05-25 18:43:39.215  INFO 5896 --- [http-nio-8080-exec-2] s.Controller.UserController              : c
 2020-05-25 18:43:39.215  INFO 5896 --- [http-nio-8080-exec-2] s.Controller.UserController              : SooI8J03tzeVZJA4QItfMw==
 2020-05-25 18:43:40.614  INFO 5896 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 18:54:22.630 ERROR 5896 --- [http-nio-8080-exec-8] c.alibaba.druid.filter.stat.StatFilter   : slow sql 261 millis. select count(*) from t_user where t_Email=?["hewson.chen@qq.com"]
+2020-05-25 18:54:42.600  INFO 5896 --- [http-nio-8080-exec-9] s.Controller.UserController              : b
+2020-05-25 18:54:42.601  INFO 5896 --- [http-nio-8080-exec-9] s.Controller.UserController              : kutf/uauL+w61xx3dTFXjw==
+2020-05-25 18:54:43.666  INFO 5896 --- [http-nio-8080-exec-10] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 18:55:22.954  INFO 5896 --- [http-nio-8080-exec-3] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 18:55:24.029  INFO 5896 --- [http-nio-8080-exec-5] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 18:55:26.976 ERROR 5896 --- [http-nio-8080-exec-6] c.alibaba.druid.filter.stat.StatFilter   : slow sql 222 millis. select * from t_task t,t_star s where t.TaskId=s.T_TaskId and s.T_UserId=40[]
+2020-05-25 18:55:41.175  INFO 5896 --- [http-nio-8080-exec-8] s.Controller.UserController              : Star [Hash = 1485235991, starid=null, tUserid=40, tTaskid=76, serialVersionUID=1]
+2020-05-25 18:56:46.808  INFO 5896 --- [http-nio-8080-exec-2] s.Controller.UserController              : Star [Hash = 943543593, starid=null, tUserid=40, tTaskid=76, serialVersionUID=1]
+2020-05-25 18:57:37.877  INFO 5896 --- [http-nio-8080-exec-3] s.Controller.UserController              : Star [Hash = 1073615092, starid=null, tUserid=40, tTaskid=80, serialVersionUID=1]
+2020-05-25 18:58:18.508  INFO 5896 --- [http-nio-8080-exec-5] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 18:58:22.380  INFO 5896 --- [http-nio-8080-exec-7] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:13:39.290  INFO 5896 --- [http-nio-8080-exec-10] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:19:04.160  INFO 5896 --- [http-nio-8080-exec-4] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:19:33.006  INFO 5896 --- [http-nio-8080-exec-9] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:19:33.265 ERROR 5896 --- [http-nio-8080-exec-9] c.alibaba.druid.filter.stat.StatFilter   : slow sql 258 millis. select * from t_task where T_isNew='1'[]
+2020-05-25 19:19:36.916  INFO 5896 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:19:44.490  INFO 5896 --- [http-nio-8080-exec-5] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:19:48.728  INFO 5896 --- [http-nio-8080-exec-8] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:39:37.233  INFO 5896 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:39:37.241  INFO 5896 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 19:39:37.292  INFO 5896 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 19:47:18.226  INFO 14548 --- [main] s.Springboot06MybatisApplicationTests    : Starting Springboot06MybatisApplicationTests on DESKTOP-O8KB4KR with PID 14548 (started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 19:47:18.228  INFO 14548 --- [main] s.Springboot06MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2020-05-25 19:47:20.837  INFO 14548 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 19:47:25.893  INFO 14548 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 19:47:27.663  INFO 14548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:47:28.343  INFO 14548 --- [main] s.Springboot06MybatisApplicationTests    : Started Springboot06MybatisApplicationTests in 11.293 seconds (JVM running for 13.775)
+2020-05-25 19:47:28.957  INFO 14548 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:47:28.959  INFO 14548 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 19:47:28.971  INFO 14548 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 19:52:57.461  INFO 3308 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 3308 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 19:52:57.465  INFO 3308 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 19:52:59.395  INFO 3308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-25 19:52:59.420  INFO 3308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 19:52:59.421  INFO 3308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 19:52:59.541  INFO 3308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 19:52:59.702  INFO 3308 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 19:53:02.645  INFO 3308 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 19:53:03.824  INFO 3308 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:53:04.301  INFO 3308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-25 19:53:04.314  INFO 3308 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 7.489 seconds (JVM running for 9.907)
+2020-05-25 19:53:48.685  INFO 3308 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 19:53:48.832  INFO 3308 --- [http-nio-8081-exec-1] s.Controller.UserController              : a
+2020-05-25 19:53:48.843  INFO 3308 --- [http-nio-8081-exec-1] s.Controller.UserController              : DMF1ucDxtqgxw5niaXcmYQ==
+2020-05-25 19:53:51.332  INFO 3308 --- [http-nio-8081-exec-2] s.Controller.UserController              : 经纬度：118.08573+24.62394
+2020-05-25 19:54:49.118  INFO 14800 --- [main] s.Springboot06MybatisApplicationTests    : Starting Springboot06MybatisApplicationTests on DESKTOP-O8KB4KR with PID 14800 (started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 19:54:49.121  INFO 14800 --- [main] s.Springboot06MybatisApplicationTests    : No active profile set, falling back to default profiles: default
+2020-05-25 19:54:50.412  INFO 14800 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 19:54:54.446  INFO 14800 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 19:54:56.128  INFO 14800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:54:56.864  INFO 14800 --- [main] s.Springboot06MybatisApplicationTests    : Started Springboot06MybatisApplicationTests in 8.2 seconds (JVM running for 9.436)
+2020-05-25 19:54:57.577  INFO 14800 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:54:57.579  INFO 14800 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 19:54:57.607  INFO 14800 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 19:59:23.317  INFO 3308 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 19:59:23.318  INFO 3308 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 19:59:23.348  INFO 3308 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:15:56.403  INFO 11700 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 11700 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:15:56.468  INFO 11700 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:15:59.142  INFO 11700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-25 23:15:59.198  INFO 11700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:15:59.198  INFO 11700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:15:59.513  INFO 11700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:15:59.721  INFO 11700 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:16:03.031  INFO 11700 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:16:04.093  INFO 11700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:16:04.675  INFO 11700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-25 23:16:04.679  INFO 11700 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 9.887 seconds (JVM running for 14.058)
+2020-05-25 23:16:22.848  INFO 11700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:16:22.849  INFO 11700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:16:22.861  INFO 11700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:16:46.260  INFO 10536 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 10536 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:16:46.264  INFO 10536 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:16:47.801  INFO 10536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:16:47.810  INFO 10536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:16:47.811  INFO 10536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:16:47.904  INFO 10536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:16:48.012  INFO 10536 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:16:50.639  INFO 10536 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:16:51.112  INFO 10536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:16:51.389  INFO 10536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:16:51.393  INFO 10536 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.847 seconds (JVM running for 7.39)
+2020-05-25 23:16:58.976  INFO 10536 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:16:58.979  INFO 10536 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:16:58.989  INFO 10536 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:17:04.917  INFO 8348 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 8348 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:17:04.924  INFO 8348 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:17:06.321  INFO 8348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:17:06.332  INFO 8348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:17:06.332  INFO 8348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:17:06.422  INFO 8348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:17:06.527  INFO 8348 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:17:09.122  INFO 8348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:17:09.618  INFO 8348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:17:09.932  INFO 8348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:17:09.937  INFO 8348 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.833 seconds (JVM running for 7.367)
+2020-05-25 23:17:56.802  INFO 8348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 23:17:56.895  INFO 8348 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.087738+24.624113
+2020-05-25 23:21:38.140  INFO 8348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:21:38.141  INFO 8348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:21:38.148  INFO 8348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:21:54.905  INFO 13624 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 13624 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:21:54.909  INFO 13624 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:21:56.554  INFO 13624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:21:56.566  INFO 13624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:21:56.567  INFO 13624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:21:56.684  INFO 13624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:21:56.847  INFO 13624 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:21:59.500  INFO 13624 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:22:00.008  INFO 13624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:22:00.307  INFO 13624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:22:00.311  INFO 13624 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.059 seconds (JVM running for 7.61)
+2020-05-25 23:22:16.272  INFO 13624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 23:22:16.325  INFO 13624 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.087738+24.624113
+2020-05-25 23:22:44.987  INFO 13624 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:22:44.988  INFO 13624 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:22:44.999  INFO 13624 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:23:15.903  INFO 9472 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 9472 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:23:15.907  INFO 9472 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:23:17.233  INFO 9472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:23:17.243  INFO 9472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:23:17.243  INFO 9472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:23:17.339  INFO 9472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:23:17.447  INFO 9472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:23:20.182  INFO 9472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:23:20.730  INFO 9472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:23:21.111  INFO 9472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:23:21.115  INFO 9472 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.915 seconds (JVM running for 7.412)
+2020-05-25 23:23:24.429  INFO 9472 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 23:23:24.509  INFO 9472 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.087738+24.624113
+2020-05-25 23:24:25.368  INFO 9472 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:24:25.369  INFO 9472 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:24:25.379  INFO 9472 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:24:52.059  INFO 8140 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 8140 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:24:52.063  INFO 8140 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:24:53.690  INFO 8140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:24:53.703  INFO 8140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:24:53.703  INFO 8140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:24:53.818  INFO 8140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:24:54.358  INFO 8140 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:24:57.063  INFO 8140 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:24:57.517  INFO 8140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:24:57.804  INFO 8140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:24:57.808  INFO 8140 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 6.384 seconds (JVM running for 7.915)
+2020-05-25 23:25:01.047  INFO 8140 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 23:25:01.141  INFO 8140 --- [http-nio-8080-exec-2] s.Controller.UserController              : 经纬度：118.087738+24.624113
+2020-05-25 23:25:52.232  INFO 8140 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:25:52.234  INFO 8140 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:25:52.245  INFO 8140 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-05-25 23:26:13.057  INFO 6196 --- [main] s.Springboot06MybatisApplication         : Starting Springboot06MybatisApplication on DESKTOP-O8KB4KR with PID 6196 (F:\IdeaProjects\SpringBootAndroid\target\classes started by hewso in F:\IdeaProjects\SpringBootAndroid)
+2020-05-25 23:26:13.061  INFO 6196 --- [main] s.Springboot06MybatisApplication         : No active profile set, falling back to default profiles: default
+2020-05-25 23:26:14.497  INFO 6196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-25 23:26:14.506  INFO 6196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-25 23:26:14.507  INFO 6196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-25 23:26:14.601  INFO 6196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-25 23:26:14.711  INFO 6196 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-05-25 23:26:17.306  INFO 6196 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-05-25 23:26:17.762  INFO 6196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:26:18.048  INFO 6196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-25 23:26:18.052  INFO 6196 --- [main] s.Springboot06MybatisApplication         : Started Springboot06MybatisApplication in 5.637 seconds (JVM running for 7.068)
+2020-05-25 23:26:53.730  INFO 6196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-25 23:26:53.792  INFO 6196 --- [http-nio-8080-exec-1] s.Controller.UserController              : 经纬度：118.087738+24.624113
+2020-05-25 23:40:21.484  INFO 6196 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-25 23:40:21.485  INFO 6196 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-05-25 23:40:21.492  INFO 6196 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

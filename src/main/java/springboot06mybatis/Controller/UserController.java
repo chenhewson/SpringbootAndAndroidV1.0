@@ -41,7 +41,7 @@ public class UserController {
         return serverResponse;
     }
 
-    @RequestMapping("/user/register.do")
+    @RequestMapping(value = "/user/register.do" )
     public ServerResponse register(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         user.settBalance(0.0);
         return userServices.registerLogic(user);
